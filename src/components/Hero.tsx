@@ -8,21 +8,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TechnicalHeading } from "./core/TechnicalHeading";
 
 const SystemStatus = ({ progress }: { progress: number }) => {
-    const [status, setStatus] = useState("SYSTEM: ONLINE");
-    const [color, setColor] = useState("text-brand-accent");
+    let status = "SYSTEM: ONLINE";
+    let color = "text-brand-accent";
 
-    useEffect(() => {
-        if (progress < 0.3) {
-            setStatus("SYSTEM: ONLINE");
-            setColor("text-brand-accent");
-        } else if (progress < 0.6) {
-            setStatus("ENCRYPTING LOCAL DATA...");
-            setColor("text-yellow-500");
-        } else {
-            setStatus("SECURE LINK ESTABLISHED");
-            setColor("text-green-500");
-        }
-    }, [progress]);
+    if (progress < 0.3) {
+        status = "Your home is secure";
+        color = "text-brand-accent";
+    } else if (progress < 0.6) {
+        status = "Protecting your data...";
+        color = "text-yellow-500";
+    } else {
+        status = "Private link active";
+        color = "text-green-500";
+    }
 
     return (
         <div className="flex items-center gap-4 font-mono text-[10px] tracking-[0.2em] uppercase py-2">
@@ -93,16 +91,16 @@ export function Hero() {
                     <div className="border-b border-white/10 p-8 flex justify-between items-center bg-black/20 backdrop-blur-sm z-30">
                         <SystemStatus progress={scrollProgress} />
                         <div className="hidden lg:flex items-center gap-8 text-[10px] font-black tracking-widest text-white/60 uppercase">
-                            <span>COORDS: 40.7128° N, 74.0060° W</span>
-                            <span>VERSION: 2.0.4-STABLE</span>
+                            <span>Private and Secure</span>
+                            <span>Quiet Standard 2.0.4</span>
                         </div>
                     </div>
 
                     {/* Background Image (Parallax) */}
                     <div ref={mainImageRef} className="absolute inset-0 z-10 scale-110">
                         <Image
-                            src="/hero-ultra-hd.png"
-                            alt="Polk Home"
+                            src="/hero-v2.png"
+                            alt="Polk Systems Home"
                             fill
                             sizes="100vw"
                             className="object-cover opacity-60"
@@ -129,11 +127,11 @@ export function Hero() {
 
                         <div className="flex flex-col md:flex-row gap-12 items-baseline max-w-4xl">
                             <div className="flex-1">
-                                <h3 className="text-2xl font-black uppercase tracking-tight mb-4">The Sovereign Collection</h3>
+                                <h3 className="text-2xl font-black uppercase tracking-tight mb-4">Your Private Sanctuary</h3>
                                 <p className="text-white/60 text-xs font-bold leading-loose uppercase tracking-widest max-w-md">
-                                    Privacy is no longer a feature. <br />
-                                    It is the foundation of the modern sanctuary. <br />
-                                    Built for local autonomy.
+                                    A home that looks out for you, <br />
+                                    without looking into your life. <br />
+                                    No cloud, no prying eyes.
                                 </p>
                             </div>
                             <Link href="/story" className="group flex items-center gap-6 text-xs font-black uppercase tracking-[0.4em] text-brand-accent hover:text-white transition-colors duration-500 pb-2 border-b border-brand-accent/30 hover:border-white">
@@ -154,13 +152,13 @@ export function Hero() {
 
                     {/* Feature Cell 1: The Brain */}
                     <Link href="/technology" className="flex-1 border-b border-white/10 p-12 group hover:bg-white/5 transition-colors relative overflow-hidden">
-                        <span className="text-brand-accent text-[10px] font-black tracking-widest uppercase mb-12 block">Tech_01</span>
+                        <span className="text-brand-accent text-[10px] font-black tracking-widest uppercase mb-12 block">The Heart</span>
                         <h2 className="text-4xl leading-[1] font-black tracking-tighter text-white uppercase mb-6 group-hover:scale-105 transition-transform duration-700">
-                            The Local <br />
-                            <span className="text-white/20">Brain.</span>
+                            The Private <br />
+                            <span className="text-white/20">Heart.</span>
                         </h2>
                         <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-[200px]">
-                            No WiFi needed for core privacy. Your data stays on-prem.
+                            Your memories stay within your walls—exactly where they belong.
                         </p>
                         <div className="absolute bottom-12 right-12 text-2xl font-light opacity-0 group-hover:opacity-100 transition-opacity">↗</div>
                     </Link>
@@ -168,12 +166,12 @@ export function Hero() {
                     {/* Feature Cell 2: Get Started */}
                     <Link href="/get-started" className="h-64 md:h-80 bg-brand-accent p-12 group hover:bg-white transition-colors flex flex-col justify-between relative overflow-hidden">
                         <div className="flex justify-between items-start">
-                            <span className="text-black text-[10px] font-black tracking-widest uppercase opacity-60">Action_02</span>
+                            <span className="text-black text-[10px] font-black tracking-widest uppercase opacity-60">Step 01</span>
                             <span className="text-4xl text-black font-light group-hover:translate-x-2 transition-transform">→</span>
                         </div>
                         <div>
-                            <span className="text-black text-[10px] font-black uppercase tracking-widest opacity-40 block mb-2">Next Step</span>
-                            <h2 className="text-4xl text-black font-black uppercase tracking-tighter leading-none">Get Started</h2>
+                            <span className="text-black text-[10px] font-black uppercase tracking-widest opacity-40 block mb-2">The First Step</span>
+                            <h2 className="text-4xl text-black font-black uppercase tracking-tighter leading-none">Begin your journey</h2>
                         </div>
                     </Link>
 

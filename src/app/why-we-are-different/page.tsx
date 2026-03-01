@@ -71,7 +71,7 @@ export default function WhyWereDifferentPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-xl md:text-2xl text-brand-white/80 font-medium leading-relaxed max-w-2xl border-l border-brand-accent/30 pl-8"
                         >
-                            The modern "smart home" is broken. It's invasive, fragile, and annoying. We rejected industry standards to build a system that respects your time, your privacy, and your intelligence.
+                            The modern &quot;smart home&quot; is broken. It&apos;s invasive, fragile, and annoying. We rejected industry standards to build a system that respects your time, your privacy, and your intelligence.
                         </motion.p>
                     </div>
                 </Container>
@@ -89,7 +89,7 @@ export default function WhyWereDifferentPage() {
                                 <span className="text-brand-accent">Polk Systems</span>
                             </h2>
                             <p className="text-white/30 text-[10px] font-black uppercase tracking-widest leading-loose max-w-xs">
-                                We don't compete on features. We compete on philosophy. Here is why discerning homeowners choose Polk.
+                                We don&apos;t compete on features. We compete on philosophy. Here is why discerning homeowners choose Polk.
                             </p>
                         </div>
 
@@ -138,10 +138,10 @@ export default function WhyWereDifferentPage() {
             <section className="py-32 relative z-10">
                 <Container>
                     <div className="space-y-32">
-                        {/* Point 1: Sovereignty */}
+                        {/* Point 1: Quiet */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
                             <div className="order-2 md:order-1">
-                                <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-6 block">01. Sovereignty</span>
+                                <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-6 block">01. Quiet</span>
                                 <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.85]">
                                     You are not<br />the product.
                                 </h2>

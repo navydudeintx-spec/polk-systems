@@ -28,7 +28,7 @@ export default function TermsPage() {
                         <div className="space-y-16 border-t border-white/10 pt-16">
                             <div className="border-l border-brand-accent/30 pl-8">
                                 <p className="text-xl md:text-2xl text-brand-white/80 font-medium leading-relaxed">
-                                    By activating a Polk Systems Core, you are entering into a Sovereign Data Agreement. We do not own your data. We do not have access to your keys.
+                                    By activating a Polk Systems Core, you are entering into a Quiet Data Agreement. We do not own your data. We do not have access to your keys.
                                 </p>
                             </div>
 

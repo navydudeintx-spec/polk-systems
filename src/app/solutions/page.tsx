@@ -159,7 +159,7 @@ export default function Solutions() {
                                     >> ENCRYPTION: AES-256-GCM
                                     >> ANOMALY_DETECTION: ACTIVE
                                     >> MEMORY_GUARD: OK
-                                    >> SYSTEM_SOVEREIGNTY: 100%`}
+                                    >> SYSTEM_QUIET: 100%`}
                                 </div>
                                 <div className="absolute bottom-4 right-4 text-brand-accent/40 text-[10px] font-bold">
                                     SYSTEM_OPTIMIZED.

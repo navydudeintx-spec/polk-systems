@@ -4,7 +4,7 @@ import { HardwareSpotlight } from "@/components/core/HardwareSpotlight";
 import { BrandGrid } from "@/components/core/BrandGrid";
 
 import { ProcessSection } from "@/components/core/ProcessSection";
-import { SovereigntyAudit } from "@/components/core/SovereigntyAudit";
+import { QuietAudit } from "@/components/core/QuietAudit";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
@@ -22,11 +22,11 @@ export default function Home() {
       {/* 3.5 BRAND GRID: Local Compatibility */}
       <BrandGrid />
 
-      {/* 3.7 THE PROCESS: Sovereignty Protocol */}
+      {/* 3.7 THE PROCESS: Quiet Protocol */}
       <ProcessSection />
 
       {/* 4. HOME ASSESSMENT: Audit CTA (Light) */}
-      <SovereigntyAudit />
+      <QuietAudit />
 
       {/* Footer / GET IN TOUCH */}
       <Footer />

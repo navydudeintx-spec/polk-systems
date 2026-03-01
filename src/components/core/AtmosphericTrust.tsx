@@ -4,19 +4,19 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Container } from '@/components/ui/Container';
+
 
 const points = [
     {
         id: "01",
         title: "No Cloud. No Trap.",
-        desc: "Your home works even if the internet doesn't. Everything stays local.",
+        desc: "Your home works even if the internet doesn&apos;t. Everything stays local.",
         icon: "WifiOff"
     },
     {
         id: "02",
         title: "Data you keep.",
-        desc: "Your habits aren't a product. Sensor data stays in your home, and only your home.",
+        desc: "Your habits aren&apos;t a product. Sensor data stays in your home, and only your home.",
         icon: "ShieldAlert"
     },
     {
@@ -41,7 +41,7 @@ export const AtmosphericTrust = () => {
             // Feature Highlights on Scroll
             if (featuresRef.current) {
                 const features = featuresRef.current.children;
-                Array.from(features).forEach((feature, i) => {
+                Array.from(features).forEach((feature) => {
                     gsap.fromTo(feature,
                         { opacity: 0.1, x: -20 },
                         {
@@ -114,24 +114,24 @@ export const AtmosphericTrust = () => {
                 <div className="lg:w-2/3 px-8 md:px-24 py-32 flex flex-col justify-center">
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <div className="mb-24">
-                            <span className="text-brand-accent text-[10px] font-black tracking-[0.4em] uppercase block mb-8">Why we're different</span>
+                            <span className="text-brand-accent text-[10px] font-black tracking-[0.4em] uppercase block mb-8">Why we&apos;re different</span>
                             <h2 className="text-5xl md:text-[8vw] font-black tracking-tighter uppercase leading-[0.8] mb-12">
                                 Absolute <br />
-                                <span className="text-white/20">Sovereignty.</span>
+                                <span className="text-white/20">Quiet.</span>
                             </h2>
                             <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-lg mb-12">
-                                We built Polk for the moments that matter most. <br />
-                                Private by nature. Built for local autonomy.
+                                We&apos;re here for the moments that matter most. <br />
+                                Protecting your family&apos;s space is our only mission.
                             </p>
                         </div>
 
                         <div ref={featuresRef} className="space-y-px bg-white/10 border border-white/10">
-                            {points.map((p, i) => (
+                            {points.map((p) => (
                                 <div key={p.id} className="polk-hover-line group bg-brand-black p-12 transition-all hover:bg-white/[0.02]">
                                     <div className="polk-hover-line-content flex flex-col gap-6">
                                         <div className="flex items-center gap-6">
                                             <span className="text-[8px] font-black tracking-widest text-brand-accent uppercase">
-                                                PROTOCOL_0{i + 1}
+                                                THE PROMISE
                                             </span>
                                             <h3 className="text-3xl font-black uppercase tracking-tighter group-hover:text-brand-accent transition-colors duration-500">
                                                 {p.title}
@@ -152,7 +152,7 @@ export const AtmosphericTrust = () => {
                     <div className="relative w-full h-full group overflow-hidden">
                         <div className="image-container absolute inset-0">
                             <Image
-                                src="/hero-ultra-hd.png"
+                                src="/hero-v2.png"
                                 alt="The Sanctuary"
                                 fill
                                 sizes="(max-width: 1024px) 100vw, 33vw"
@@ -168,7 +168,7 @@ export const AtmosphericTrust = () => {
 
                         <div className="absolute bottom-12 left-12 z-20">
                             <div className="text-white text-6xl font-black tracking-tighter uppercase mb-2 group-hover:text-brand-accent transition-colors duration-1000">100%</div>
-                            <div className="text-brand-accent text-[10px] font-black tracking-[0.4em] uppercase group-hover:text-white transition-colors duration-1000">Local Execution</div>
+                            <div className="text-brand-accent text-[10px] font-black tracking-[0.4em] uppercase group-hover:text-white transition-colors duration-1000">Private by Design</div>
                         </div>
                     </div>
                 </div>

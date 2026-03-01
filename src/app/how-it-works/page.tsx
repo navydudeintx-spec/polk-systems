@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
 
                         {/* Pillar 3 */}
                         <div className="group p-12 bg-brand-black hover:bg-white/[0.03] transition-colors duration-500">
-                            <span className="text-[10px] font-black uppercase tracking-widest text-white/20 mb-12 block group-hover:text-brand-accent transition-colors">03. The Sovereign Data</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest text-white/20 mb-12 block group-hover:text-brand-accent transition-colors">03. The Quiet Data</span>
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-brand-white leading-none">Your Business.<br />Stay Yours.</h3>
                             <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose">
                                 Traditional smart cameras stream video to corporate servers. Ours record to your local hard drive. No monthly fees, no data mining, and no creepy privacy violations.

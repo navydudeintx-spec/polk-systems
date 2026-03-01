@@ -16,7 +16,7 @@ export const PAGE_METADATA: Record<string, PageMeta> = {
     },
     "/how-it-works": {
         title: "How It Works | Polk Systems",
-        description: "The Silent Orchestra — one cohesive system with local processing, unified control, and sovereign data.",
+        description: "The Silent Orchestra — one cohesive system with local processing, unified control, and quiet data.",
     },
     "/why-we-are-different": {
         title: "Why We're Different | Polk Systems",
@@ -24,7 +24,7 @@ export const PAGE_METADATA: Record<string, PageMeta> = {
     },
     "/process": {
         title: "The Process | Polk Systems",
-        description: "From discovery audit to stewardship — our five-phase sovereignty protocol for your home.",
+        description: "From discovery audit to stewardship — our five-phase quiet protocol for your home.",
     },
     "/get-started": {
         title: "Home Assessment | Polk Systems",
@@ -32,7 +32,7 @@ export const PAGE_METADATA: Record<string, PageMeta> = {
     },
     "/solutions": {
         title: "Solutions | Polk Systems",
-        description: "Lighting, climate, security, and audio — unified under one sovereign system with zero cloud dependency.",
+        description: "Lighting, climate, security, and audio — unified under one quiet system with zero cloud dependency.",
     },
     "/system": {
         title: "The System | Polk Systems",
@@ -47,12 +47,12 @@ export const PAGE_METADATA: Record<string, PageMeta> = {
         description: "Get in touch with our team to discuss your home automation project.",
     },
     "/audit": {
-        title: "Sovereignty Audit | Polk Systems",
-        description: "Assess the sovereignty of your current home system with our diagnostic audit.",
+        title: "Quiet Audit | Polk Systems",
+        description: "Assess the quiet of your current home system with our diagnostic audit.",
     },
     "/privacy": {
         title: "Privacy Policy | Polk Systems",
-        description: "How Polk Systems protects your data — locally processed, never sold, always sovereign.",
+        description: "How Polk Systems protects your data — locally processed, never sold, always quiet.",
     },
     "/terms": {
         title: "Terms of Service | Polk Systems",

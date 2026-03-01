@@ -38,7 +38,7 @@ export default function TechnologyPage() {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 border-t border-white/10 pt-16">
                                 <div>
-                                    <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-accent mb-6">True Sovereignty</h3>
+                                    <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-accent mb-6">True Quiet</h3>
                                     <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose">
                                         Your home is your sanctuary. By moving the &quot;brain&quot; of your smart home inside your walls, we remove the middleman. Forever.
                                     </p>
@@ -67,7 +67,7 @@ export default function TechnologyPage() {
 
                             <div className="absolute bottom-12 left-12 z-30">
                                 <span className="text-[10px] font-black tracking-[0.4em] uppercase text-white/60 mb-2 block">Model P-01</span>
-                                <h2 className="text-3xl font-black uppercase tracking-tighter text-white">Sovereign Core</h2>
+                                <h2 className="text-3xl font-black uppercase tracking-tighter text-white">Quiet Core</h2>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function TechnologyPage() {
                                 <li className="flex gap-4 items-center text-brand-accent font-black uppercase tracking-widest text-[10px]">✓ 100% On-Device Processing</li>
                                 <li className="flex gap-4 items-center text-brand-accent font-black uppercase tracking-widest text-[10px]">✓ One-Time Buy. No monthly rent.</li>
                                 <li className="flex gap-4 items-center text-brand-accent font-black uppercase tracking-widest text-[10px]">✓ Air-Gapped Security Mesh</li>
-                                <li className="flex gap-4 items-center text-brand-accent font-black uppercase tracking-widest text-[10px]">✓ True Data Sovereignty</li>
+                                <li className="flex gap-4 items-center text-brand-accent font-black uppercase tracking-widest text-[10px]">✓ True Data Quiet</li>
                             </ul>
                         </div>
                     </div>

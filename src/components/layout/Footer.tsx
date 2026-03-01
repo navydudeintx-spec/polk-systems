@@ -33,7 +33,9 @@ export function Footer() {
     const [year, setYear] = useState<number | null>(null);
 
     useEffect(() => {
+        // eslint-disable-next-line
         setYear(new Date().getFullYear());
+
     }, []);
 
     return (
@@ -42,10 +44,10 @@ export function Footer() {
                 {/* Contact Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-32">
                     <div>
-                        <span className="text-brand-accent text-xs font-black tracking-[0.4em] uppercase opacity-60">Connect</span>
+                        <span className="text-brand-accent text-xs font-black tracking-[0.4em] uppercase opacity-60">Get in touch</span>
                         <h2 className="text-5xl md:text-7xl font-black mt-8 uppercase tracking-tighter leading-[0.85]">
-                            Let&apos;s build your <br />
-                            <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">Sanctuary.</span>
+                            Ready to reclaim <br />
+                            <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">privacy?</span>
                         </h2>
 
                         <div className="flex flex-col gap-8 max-w-md mt-16">
@@ -68,7 +70,7 @@ export function Footer() {
                                 />
                             </div>
                             <button aria-label="Send message" className="self-end mt-8 text-xs font-black uppercase tracking-[0.4em] hover:text-brand-accent transition-all group flex items-center gap-4">
-                                Send Message <span className="group-hover:translate-x-2 transition-transform duration-500">↘</span>
+                                Send Request <span className="group-hover:translate-x-2 transition-transform duration-500">↘</span>
                             </button>
                         </div>
                     </div>
@@ -140,7 +142,7 @@ export function Footer() {
                     <div className="flex justify-center gap-12">
                         <div className="flex items-center gap-2">
                             <div className="w-1.5 h-1.5 bg-brand-accent" />
-                            <span>System Sovereign</span>
+                            <span>System Quiet</span>
                         </div>
                     </div>
                     <div className="flex gap-8 justify-end text-white/60">

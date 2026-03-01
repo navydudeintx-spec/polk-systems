@@ -3,7 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { Footer } from "@/components/layout/Footer";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { motion } from "framer-motion";
+
 import Link from "next/link";
 
 export default function ControlPage() {
@@ -29,7 +29,7 @@ export default function ControlPage() {
                         <div className="md:col-span-4">
                             <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-4 block">Phase Four</span>
                             <p className="text-lg text-white/60 leading-relaxed font-medium">
-                                This is the final handoff. We give you full administrative access to your system. We do not keep backdoors. It is your sovereign territory.
+                                This is the final handoff. We give you full administrative access to your system. We do not keep backdoors. It is your quiet territory.
                             </p>
                         </div>
                         <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">
