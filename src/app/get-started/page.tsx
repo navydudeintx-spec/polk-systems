@@ -65,7 +65,7 @@ export default function GetStartedPage() {
                                 <div className="w-2 h-2 bg-green-500 animate-pulse" />
                                 <div>
                                     <div className="text-[10px] font-black uppercase tracking-widest text-brand-white">System Status</div>
-                                    <div className="text-xs text-brand-white/40 font-mono mt-1 uppercase">Accepting New Projects • Q1 2026</div>
+                                    <div className="text-xs text-brand-white/40 font-mono mt-1 uppercase">Accepting New Projects • Q2 2026</div>
                                 </div>
                             </motion.div>
                         </div>
