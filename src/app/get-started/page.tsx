@@ -48,7 +48,8 @@ export default function GetStartedPage() {
                                 className="space-y-8 text-xl font-medium text-brand-white/60 leading-relaxed border-l border-brand-accent/30 pl-8"
                             >
                                 <p>
-                                    Polk Systems are not sold in boxes. They are architected for specific environments.
+                                    Polk Systems aren’t off-the-shelf—they’re tailored to your environment, professionally installed or pre-configured, shipped, and supported remotely
+                                    From full white-glove installation to guided self-install solutions, we make advanced automation fit your home, your comfort level, and your budget.
                                 </p>
                                 <p>
                                     Complete this secure assessment to initialize your project file. Our engineering team will review your property specifications and generate a preliminary system design.
