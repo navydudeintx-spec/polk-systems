@@ -61,7 +61,7 @@ export default function StoryPage() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 className="text-xl md:text-2xl text-brand-white/60 font-medium leading-relaxed max-w-xl border-l border-brand-accent/30 pl-8"
                             >
-                                Greg Polk spent two decades engineering systems for IBM. But his most important project was ensuring his mother could age with dignity in the home she loved.
+                                Greg Polk was close to his mother, and that relationship shaped the way he thinks about home automation—creating systems that are beautiful, intuitive, and simple enough to earn her approval.
                             </motion.p>
                         </div>
 
