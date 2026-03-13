@@ -72,14 +72,17 @@ function buildTransporter() {
     const pass = requiredEnv("SMTP_PASS");
 
     return nodemailer.createTransport({
-        host,
-        port,
-        secure,
-        auth: {
+    	host,
+    	port,
+    	secure,
+    	auth: {
             user,
             pass,
         },
-    });
+        tls: {
+            rejectUnauthorized: false,
+        },
+     });
 }
 
 function formatSystems(systems?: string[]): string {

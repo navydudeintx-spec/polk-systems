@@ -50,3 +50,4 @@ local.db-wal
 
 # loki testing infra
 /.loki
+.env.local
