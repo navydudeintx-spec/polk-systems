@@ -7,6 +7,99 @@ import { Shield, Brain, Cpu, ArrowRight } from "lucide-react";
 import { TechnicalHeading } from "@/components/core/TechnicalHeading";
 
 export default function Solutions() {
+    const services = [
+  {
+    code: "ASSESSMENT_01",
+    title: "Private Home Assessment",
+    price: "$149",
+    note: "Credited toward approved projects",
+    description:
+      "A guided review of your home, goals, privacy concerns, and existing devices so you know what to keep, what to replace, and what to do next.",
+    bullets: [
+      "In-home or remote consultation",
+      "Device and privacy review",
+      "Written project roadmap",
+    ],
+    href: "/get-started",
+    cta: "Book Assessment",
+  },
+  {
+    code: "RESCUE_02",
+    title: "Smart Home Rescue / Cleanup",
+    price: "Starting at $299",
+    note: "Best for existing smart-home setups",
+    description:
+      "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again.",
+    bullets: [
+      "Broken routine repair",
+      "App consolidation",
+      "Device troubleshooting and optimization",
+    ],
+    href: "/get-started",
+    cta: "Start Rescue",
+  },
+  {
+    code: "CORE_03",
+    title: "Local Core Installation",
+    price: "Starting at $899",
+    note: "Privacy-first local control",
+    description:
+      "A local smart-home foundation built for speed, reliability, and ownership of your data without depending on cloud automations.",
+    bullets: [
+      "Local controller setup",
+      "Dashboard configuration",
+      "Core automations and owner handoff",
+    ],
+    href: "/get-started",
+    cta: "Start Project",
+  },
+  {
+    code: "COMFORT_04",
+    title: "Lighting & Comfort Automation",
+    price: "Starting at $1,250 + hardware",
+    note: "Daily-use automation package",
+    description:
+      "Smarter lighting, better comfort, and routines built around how you actually live in the home every day.",
+    bullets: [
+      "Lighting scenes and schedules",
+      "Motion-based logic",
+      "Climate and comfort routines",
+    ],
+    href: "/get-started",
+    cta: "Plan My System",
+  },
+  {
+    code: "CAMERA_05",
+    title: "Privacy-First Camera Systems",
+    price: "Starting at $1,750 + hardware",
+    note: "Local recording focused",
+    description:
+      "Security designed for your home without turning your family’s routines into someone else’s data product.",
+    bullets: [
+      "Local recording design",
+      "Camera setup and alerts",
+      "Retention and mobile access setup",
+    ],
+    href: "/get-started",
+    cta: "Request Camera Quote",
+  },
+  {
+    code: "WHOLEHOME_06",
+    title: "Whole-Home Design & Integration",
+    price: "Custom Quote",
+    note: "Most integrated projects start at $3,500+",
+    description:
+      "For larger projects involving lighting, climate, cameras, locks, shades, dashboards, and advanced multi-system integration.",
+    bullets: [
+      "Full-home planning",
+      "Multi-system integration",
+      "Phased implementation roadmap",
+    ],
+    href: "/contact",
+    cta: "Request Custom Quote",
+  },
+];
+
     return (
         <div className="min-h-screen bg-brand-black text-white relative overflow-hidden pt-24">
             {/* Architectural Grid Overlay */}
@@ -47,20 +140,26 @@ export default function Solutions() {
                                 so you can focus on what matters. Your home, your rules.
                             </p>
                         </motion.div>
+                    <div className="flex flex-wrap gap-4">
+                        <Link href="/contact">
+                            <Button className="bg-white text-brand-black hover:bg-brand-accent hover:text-white px-8 md:px-12 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase font-bold border-brand-white font-sans transition-colors">
+                               Deploy System
+                            </Button>
+                        </Link>
 
-                        <div className="flex flex-wrap gap-4">
-                            <Link href="/contact">
-                                <Button className="bg-white text-brand-black hover:bg-brand-accent hover:text-white px-8 md:px-12 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase font-bold border-brand-white font-sans transition-colors">
-                                    Deploy System
-                                </Button>
-                            </Link>
-                            <Link href="/system">
-                                <Button variant="outline" className="border-white/20 text-white px-8 md:px-12 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase font-bold font-sans">
-                                    View Specs
-                                </Button>
-                            </Link>
-                        </div>
+                        <Link href="#services-pricing">
+                            <Button variant="outline" className="border-white/20 text-white px-8 md:px-12 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase font-bold font-sans">
+                                View Pricing
+                            </Button>
+                        </Link>
+
+                        <Link href="/system">
+                            <Button variant="outline" className="border-white/20 text-white px-8 md:px-12 py-4 md:py-6 text-[10px] tracking-[0.4em] uppercase font-bold font-sans">
+                                View Specs
+                            </Button>
+                        </Link>
                     </div>
+                </div>    
 
                     <div className="md:col-span-3 bg-white/5 relative overflow-hidden hidden md:block">
                         <div className="absolute inset-0 bg-[url('/solutions-hero.png')] bg-cover bg-center grayscale opacity-40 mix-blend-overlay" />
@@ -173,6 +272,104 @@ export default function Solutions() {
 
                 </div>
             </section>
+{/* SERVICES & STARTING PRICES */}
+<section
+  id="services-pricing"
+  className="relative z-10 border-t border-white/10 py-24"
+>
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="mb-12 grid gap-8 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
+      <div>
+        <div className="mb-4 text-[11px] uppercase tracking-[0.35em] text-white/40">
+          SERVICE_MATRIX_01
+        </div>
+
+        <h2 className="max-w-4xl text-4xl font-light tracking-tight text-white sm:text-5xl">
+          Services &amp; Starting Prices
+        </h2>
+
+        <p className="mt-6 max-w-3xl text-base leading-7 text-white/70">
+          Every home is different. These prices cover planning, setup,
+          configuration, and owner handoff. Hardware is quoted separately where
+          needed. No required monthly fees.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
+        <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
+          PRICING_MODE
+        </div>
+        <div className="mt-3 text-lg text-white">Starting prices shown.</div>
+        <p className="mt-2 text-sm leading-6 text-white/60">
+          Final pricing depends on home size, device count, wiring, and the
+          brands you want to keep or add.
+        </p>
+      </div>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {services.map((service, index) => (
+        <motion.article
+          key={service.code}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, delay: index * 0.05 }}
+          className="group rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.05]"
+        >
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="text-[11px] uppercase tracking-[0.28em] text-white/35">
+                {service.code}
+              </div>
+              <h3 className="mt-3 text-2xl font-light text-white">
+                {service.title}
+              </h3>
+            </div>
+
+            <div className="shrink-0 rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/60">
+              LIVE
+            </div>
+          </div>
+
+          <div className="mt-6 text-2xl font-medium text-white">
+            {service.price}
+          </div>
+
+          <div className="mt-2 text-sm uppercase tracking-[0.18em] text-white/40">
+            {service.note}
+          </div>
+
+          <p className="mt-6 text-sm leading-7 text-white/70">
+            {service.description}
+          </p>
+
+          <ul className="mt-6 space-y-3">
+            {service.bullets.map((bullet) => (
+              <li
+                key={bullet}
+                className="flex items-start gap-3 text-sm text-white/65"
+              >
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-white/50" />
+                <span>{bullet}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <Link
+              href={service.href}
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm text-white transition-colors duration-300 hover:border-white/30 hover:bg-white/10"
+            >
+              {service.cta}
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </motion.article>
+      ))}
+    </div>
+  </div>
+</section>
 
             {/* TECHNICAL CTA */}
             <section className="bg-brand-black p-12 md:p-24 text-center relative border-t border-white/10">
