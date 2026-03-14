@@ -38,19 +38,19 @@ const PROJECT_TYPES = [
     { value: "consultation", label: "Consultation Only", desc: "Expert guidance on your options", icon: MessageSquare },
 ];
 
-const HOME_SIZES = ["Under 2,000 sq ft", "2,000 – 4,000 sq ft", "4,000 – 8,000 sq ft", "8,000+ sq ft"];
-const ROOM_COUNTS = ["1 – 5 rooms", "6 – 10 rooms", "11 – 20 rooms", "20+ rooms"];
+const HOME_SIZES = ["Primary Residence", "Vacation Home", "Airbnb", "Other"];
+const ROOM_COUNTS = ["Security", "Save Money", "Monitor Property"];
 const PROPERTY_TYPES = ["Single Family", "Estate", "Condo / Townhome", "Commercial"];
 
 const SYSTEMS = [
     { value: "lighting", label: "Smart Lighting" },
     { value: "climate", label: "Climate Control" },
-    { value: "security", label: "Security & Cameras" },
-    { value: "audio", label: "Whole-Home Audio" },
+    { value: "security", label: "New Security" },
+    { value: "retrofit", label: "Retrofit Wired Security" },
     { value: "shading", label: "Automated Shading" },
     { value: "energy", label: "Energy Monitoring" },
-    { value: "network", label: "Network Infrastructure" },
-    { value: "theater", label: "Home Theater" },
+    { value: "voice", label: "Voice Control" },
+    { value: "elderly", label: "Elderly Monitoring" },
 ];
 
 interface AssessmentFormProps {
@@ -212,7 +212,7 @@ export function AssessmentForm({ source = "contact" }: AssessmentFormProps) {
                         <div className="space-y-8">
                             <div>
                                 <label className="block text-xs font-bold uppercase tracking-[0.2em] text-brand-text-muted mb-4 font-sans">
-                                    Home Size
+                                    Type of Home
                                 </label>
                                 <div className="grid grid-cols-2 gap-3">
                                     {HOME_SIZES.map((size) => (
@@ -233,7 +233,7 @@ export function AssessmentForm({ source = "contact" }: AssessmentFormProps) {
 
                             <div>
                                 <label className="block text-xs font-bold uppercase tracking-[0.2em] text-brand-text-muted mb-4 font-sans">
-                                    Room Count
+                                    Main Goal for Smart Home System
                                 </label>
                                 <div className="grid grid-cols-2 gap-3">
                                     {ROOM_COUNTS.map((count) => (

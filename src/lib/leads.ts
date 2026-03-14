@@ -91,12 +91,12 @@ function formatSystems(systems?: string[]): string {
     const labels: Record<string, string> = {
         lighting: "Smart Lighting",
         climate: "Climate Control",
-        security: "Security",
-        audio: "Whole-Home Audio",
+        security: "New Security",
+        retrofit: "Retrofit Wired Security",
         shading: "Automated Shading",
         energy: "Energy Monitoring",
-        network: "Network Infrastructure",
-        theater: "Home Theater",
+        voice: "Voice Control",
+        elderly: "Elderly Monitoring",
     };
 
     return systems.map((s) => labels[s] || s).join(", ");
