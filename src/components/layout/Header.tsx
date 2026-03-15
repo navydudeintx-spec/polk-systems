@@ -64,6 +64,7 @@ export const Header = () => {
         { name: "How It Works", href: "/how-it-works" },
         { name: "Why We're Different", href: "/why-we-are-different" },
         { name: "The Process", href: "/process" },
+        { name: "Solutions", href: "/solutions" },
         { name: "Get in Touch", href: "#get-in-touch" },
     ];
 
