@@ -7,33 +7,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 import { TechnicalHeading } from './TechnicalHeading';
 
-const products = [
-    {
-        id: "01",
-        name: "The Brain",
-        desc: "The brain of your home. Local compute, zero cloud sync.",
-        image: "/the-node-core.jpg",
-        href: "/brain",
-    },
-    {
-        id: "02",
-        name: "The Vision",
-        desc: "Encrypted optics. Your home has never looked safer.",
-        image: "/prod-cam-orange.png",
-    },
-    {
-        id: "03",
-        name: "The Aura",
-        desc: "Lighting that understands your day, naturally.",
-        image: "/prod-light-orange.png",
-    },
-    {
-        id: "04",
-        name: "The Portal",
-        desc: "Biometric access for physical peace of mind.",
-        image: "/prod-lock-orange.png",
-    }
-];
+import { hardwareItems } from '@/data/hardware';
+
 
 export const HardwareSpotlight = () => {
     const sectionRef = useRef<HTMLElement>(null);
@@ -62,7 +37,7 @@ export const HardwareSpotlight = () => {
 
     return (
         <section id="how-it-works" ref={sectionRef} className="bg-brand-black text-brand-white border-b border-white/10">
-            <div className="grid grid-cols-1 lg:grid-cols-4">
+            <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-4">
                 {/* Header Cell */}
                 <div className="lg:col-span-4 border-b border-white/10 p-12 md:p-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
                     <div className="max-w-4xl">
@@ -93,7 +68,8 @@ export const HardwareSpotlight = () => {
                 </div>
 
                 {/* Product Cells */}
-{products.map((product) => (
+{hardwareItems.map((product) => (
+
     <div
         key={product.id}
         className="product-cell polk-hover-line group relative aspect-[4/5] border-r border-white/5 last:border-r-0 lg:[&:nth-child(n+1)]:border-b-0 border-b lg:border-b-0 cursor-pointer overflow-hidden transition-colors duration-500 hover:bg-white/5"
