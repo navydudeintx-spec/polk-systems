@@ -97,6 +97,9 @@ function formatSystems(systems?: string[]): string {
         energy: "Energy Monitoring",
         voice: "Voice Control",
         elderly: "Elderly Monitoring",
+  	child: "Child Monitoring",
+ 	powerwall: "Powerwall/Battery Optimization",
+  	remote: "Remote Control/Monitoring",
     };
 
     return systems.map((s) => labels[s] || s).join(", ");

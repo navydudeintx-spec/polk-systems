@@ -39,7 +39,7 @@ const PROJECT_TYPES = [
 ];
 
 const HOME_SIZES = ["Primary Residence", "Vacation Home", "Airbnb", "Other"];
-const ROOM_COUNTS = ["Security", "Save Money", "Monitor Property"];
+const ROOM_COUNTS = ["Security", "Save Money", "Monitor Property","Convenience"];
 const PROPERTY_TYPES = ["Single Family", "Estate", "Condo / Townhome", "Commercial"];
 
 const SYSTEMS = [
@@ -51,6 +51,10 @@ const SYSTEMS = [
     { value: "energy", label: "Energy Monitoring" },
     { value: "voice", label: "Voice Control" },
     { value: "elderly", label: "Elderly Monitoring" },
+    { value: "child", label: "Child Monitoring" },
+    { value: "powerwall", label: "Powerwall/Battery Optimization" },
+    { value: "remote", label: "Remote Control/Monitoring" },
+    
 ];
 
 interface AssessmentFormProps {
