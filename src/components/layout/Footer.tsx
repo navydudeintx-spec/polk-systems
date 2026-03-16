@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { QuickContactForm } from "@/components/forms/QuickContactForm";
 import { Container } from "@/components/ui/Container";
 import { useEffect, useState } from "react";
 
@@ -50,32 +51,11 @@ export function Footer() {
                             <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">privacy?</span>
                         </h2>
 
-                        <div className="flex flex-col gap-8 max-w-md mt-16">
-                            <div className="group relative">
-                                <label htmlFor="footer-email" className="sr-only">Email address</label>
-                                <input
-                                    id="footer-email"
-                                    type="email"
-                                    placeholder="Email address"
-                                    className="w-full bg-transparent border-b border-white/10 py-6 text-brand-white focus-visible:outline-none focus-visible:border-brand-accent transition-all placeholder:text-white/20 font-bold uppercase text-xs tracking-widest"
-                                />
-                            </div>
-                            <div className="group relative">
-                                <label htmlFor="footer-message" className="sr-only">How can we help?</label>
-                                <input
-                                    id="footer-message"
-                                    type="text"
-                                    placeholder="How can we help?"
-                                    className="w-full bg-transparent border-b border-white/10 py-6 text-brand-white focus-visible:outline-none focus-visible:border-brand-accent transition-all placeholder:text-white/20 font-bold uppercase text-xs tracking-widest"
-                                />
-                            </div>
-                            <button aria-label="Send message" className="self-end mt-8 text-xs font-black uppercase tracking-[0.4em] hover:text-brand-accent transition-all group flex items-center gap-4">
-                                Send Request <span className="group-hover:translate-x-2 transition-transform duration-500">↘</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* Social Links */}
+			<div className="max-w-md mt-16">
+    				<QuickContactForm source="footer" />
+			</div>
+		</div>
+                   {/* Social Links */}
                     <div className="grid grid-cols-2 gap-4 content-end">
                         {socialLinks.map((social) => (
                             <a
