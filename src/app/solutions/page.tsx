@@ -130,14 +130,14 @@ export default function Solutions() {
                                     delay={0.1}
                                 />
                                 <TechnicalHeading
-                                    text="Command."
+                                    text="Control."
                                     className="text-5xl md:text-6xl lg:text-8xl text-brand-text-muted"
                                     delay={0.4}
                                 />
                             </div>
                             <p className="text-sm text-brand-text-muted max-w-xl font-light leading-relaxed font-sans uppercase tracking-widest">
-                                Technology should be simple. We build systems that take care of the small things,
-                                so you can focus on what matters. Your home, your rules.
+                                A smart home should not be harder to use. We build systems that work the way 
+                                people already live, so your home feels simpler, smarter, and fully yours.
                             </p>
                         </motion.div>
                     <div className="flex flex-wrap gap-4">
@@ -180,22 +180,22 @@ export default function Solutions() {
 
                     {[
                         {
-                            title: "Edge-Native",
+                            title: "Built Around Real Life",
                             icon: Cpu,
-                            desc: "0.02ms latency. Local execution. Your data never leaves the home premises. Hardware-level isolation.",
-                            stat: "LATENCY: 0.02MS"
+                            desc: "Your system should fit the way you already live, not force you to learn a new way of living. We design automation that feels natural from day one.",
+                            stat: "DESIGNED FOR EVERYDAY USE"
                         },
                         {
-                            title: "Adaptive AI",
+                            title: "Simple To Control",
                             icon: Brain,
-                            desc: "Systems that learn individual patterns. Lighting, climate, and security that adjust via behavioral prediction.",
-                            stat: "LEARNING: ENABLED"
+                            desc: "If you can use a light switch, you can use our automation. We keep familiar controls at the center so the home feels smarter without becoming harder to use.",
+                            stat: "FAMILIAR CONTROLS"
                         },
                         {
-                            title: "Zero Trust",
+                            title: "Private By Design",
                             icon: Shield,
-                            desc: "Bank-grade security architecture. Every device is authenticated. Every single request is cryptographically verified.",
-                            stat: "SEC_AUTH: 256-BIT"
+                            desc: "Your home data stays where it belongs. We prioritize local control and privacy-first choices so your system works for your family, not for a cloud company.",
+                            stat: "LOCAL-FIRST APPROACH"
                         }
                     ].map((feature, i) => (
                         <div key={i} className="bg-brand-black p-12 md:p-16 relative group overflow-hidden">
@@ -224,18 +224,18 @@ export default function Solutions() {
                     <div className="p-12 md:p-24 bg-brand-black relative">
                         <div className="absolute top-0 left-0 polk-plus-marker" />
                         <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-brand-accent mb-6 block font-sans">
-                            Compliance Standard
+                            Why Polk Systems?
                         </span>
                         <h2 className="text-4xl md:text-5xl font-display font-light uppercase tracking-tight leading-none mb-8">
                             Built For <br />
-                            <span className="text-brand-text-muted">Reliability.</span>
+                            <span className="text-brand-text-muted">Real Life.</span>
                         </h2>
                         <p className="text-sm text-brand-text-muted font-light mb-12 max-w-md font-sans uppercase tracking-wider">
-                            Trusted by those who value privacy. Our systems meet world standards
-                            while looking clean and simple in your home.
+                            A smart home should feel natural, private, and easy to trust. We build systems that work quietly in the background,
+                            use controls people already understand, and fit the way your home is actually lived in.
                         </p>
                         <div className="flex flex-col gap-6 font-mono">
-                            {['ISO 27001 RE-CERTIFIED', 'SOC 2 TYPE II COMPLIANT', 'TPM 2.0 HARDWARE CHIP'].map((cert, idx) => (
+                            {['PRIVATE BY DESIGN', 'FAMILIAR TO USE', 'BUILT AROUND YOUR HOME'].map((cert, idx) => (
                                 <div key={idx} className="flex items-center gap-4 group">
                                     <div className="w-2 h-2 bg-brand-accent" />
                                     <span className="text-[10px] font-bold tracking-[0.2em]">{cert}</span>
@@ -266,7 +266,7 @@ export default function Solutions() {
                             </div>
                         </div>
                         <div className="absolute bottom-8 left-8 py-2 px-4 border border-white/10 text-[8px] font-bold tracking-[0.4em] uppercase text-white/30 font-sans">
-                            Protocol Visualization 01-A
+                          Polk Systems Standard
                         </div>
                     </div>
 
