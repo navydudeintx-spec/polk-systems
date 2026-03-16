@@ -1,3 +1,7 @@
+git add src/app/process/page.tsx
+git rm 
+git commit -m "disc"
+git push origin main
 Polk Systems Website Deploy Notes
 =================================
 
@@ -48,3 +52,16 @@ Verification:
 - Home page: https://www.polk-systems.com/
 - Brain page: https://www.polk-systems.com/brain
 - Solutions page: https://www.polk-systems.com/solutions
+
+----------------------------------------------
+GIT PUSH FROM LOCAL REPO
+========================
+
+cd /d C:\Users\navyd_1sjitwl\Documents\site\Polk-Systems
+git status
+git add src\data\hardware.ts
+git add src\app\switch\page.tsx
+git add src\components\core\HardwareSpotlight.tsx
+git add src\components\core\HardwareDetailTemplate.tsx
+git commit -m "Rename Aura to Switch and update hardware copy"
+git push origin main
