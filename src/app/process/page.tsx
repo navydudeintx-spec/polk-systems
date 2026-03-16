@@ -9,32 +9,32 @@ const PROCESS_STEPS = [
     {
         number: "01",
         title: "The Audit",
-        description: "We don't guess. We measure. We conduct a comprehensive site survey to understand your network environment, electrical infrastructure, and lifestyle patterns.",
-        detail: "Output: Technical Feasibility Report"
+        description: "We do not guess. We verify. We begin with a detailed site audit to understand your network, the technology already in the home, and how you want everything to work in everyday life.",
+        detail: "Output: A Clear Plan Forward"
     },
     {
         number: "02",
-        title: "The Architecture",
-        description: "Our engineers design your system from the ground up. Every cable run, every sensor placement, and every server rack unit is planned in CAD before a single screw is turned.",
-        detail: "Output: Full System Blueprints"
+        title: "The Design",
+        description: "Before anything is installed, we design how the system should work. That includes the devices you already have, the automations you want, and the experience you want every day.",
+        detail: "Output: A Custom System Plan"
     },
     {
         number: "03",
-        title: "The Fabrication",
-        description: "Unlike typical installers who figure it out on-site, we build and test your core server rack in our lab. We burn-in the hardware for 48 hours to ensure zero defects.",
-        detail: "Output: Certified Rack Core"
+        title: "The Preparation",
+        description: "Before installation day, we prepare and test the core of your system so everything is ready to work the way it should when it reaches your home.",
+        detail: "Output: A Ready-to-Install System"
     },
     {
         number: "04",
-        title: "The Deployment",
-        description: "Our white-glove team installs the infrastructure with surgical precision. We respect your home, creating zero dust and leaving zero trace—except for a perfect system.",
-        detail: "Output: Final Commissioning"
+        title: "The Installation",
+        description: "We install the system with care, precision, and respect for your home. Every device is placed, connected, and configured so the finished result feels clean, natural, and dependable.",
+        detail: "Output: System Installation and Setup"
     },
     {
         number: "05",
-        title: "The Stewardship",
-        description: "True luxury is reliability. We remotely monitor your system health 24/7 (without seeing your personal data) to fix issues before you even notice them.",
-        detail: "Output: Quarterly Health Reports"
+        title: "The Support",
+        description: "A great system should keep performing long after installation day. We stay available for updates, adjustments, and ongoing support so your technology continues to work the way it should.",
+        detail: "Output: Continued System Support"
     }
 ];
 
@@ -72,7 +72,7 @@ export default function ProcessPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-xl md:text-2xl text-brand-white/80 font-medium leading-relaxed max-w-2xl border-l border-brand-accent/30 pl-8"
                         >
-                            A Polk System is not installed; it is commissioned. We follow a military-grade protocol to ensure that your system performs flawlessly from Day One to Year Ten.
+                            A Polk System is not just installed. It is commissioned through a proven process so it performs the way it should from the start.
                         </motion.p>
                     </div>
                 </Container>
