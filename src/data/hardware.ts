@@ -1,3 +1,10 @@
+export type HardwareBenefit = {
+    title: string;
+    body: string;
+    helperLabel?: string;
+    helperText?: string;
+};
+
 export type HardwareItem = {
     id: string;
     slug: string;
@@ -14,28 +21,60 @@ export type HardwareItem = {
     detailTitle: string;
     detailAccent: string;
     detailBody: string;
+    benefits?: HardwareBenefit[];
 };
 
 export const hardwareItems: HardwareItem[] = [
     {
-        id: "01",
-        slug: "brain",
-        name: "The Brain",
-        shortLabel: "The Brain",
-        title: "The Brain",
-        subtitle: "Of the House.",
-        desc: "The brain of your home. Local compute, zero cloud sync.",
-        image: "/the-node-core.jpg",
-        href: "/brain",
-        pageEyebrow: "System Core",
-        heroIntro:
-            "Built for fast, private local control. The Brain processes automations, device logic, and home routines inside the home instead of handing them off to the cloud.",
-        detailEyebrow: "Latency_Check: 0.02ms",
-        detailTitle: "Local Force.",
-        detailAccent: "Zero Cloud.",
-        detailBody:
-            "Because your data is local, it is instantly accessible. You own the history, the automations, and the logic that runs your home.",
-    },
+    id: "01",
+    slug: "brain",
+    name: "The Brain",
+    shortLabel: "The Brain",
+    title: "The Brain",
+    subtitle: "Of the House.",
+    desc: "The brain of your home. Local compute, zero cloud sync.",
+    image: "/the-node-core.jpg",
+    href: "/brain",
+    pageEyebrow: "System Core",
+    heroIntro:
+        "Built for fast, private local control. The Brain processes the logic of your home inside the home instead of sending every action out to the cloud.",
+    detailEyebrow: "Latency_Check: 0.02ms",
+    detailTitle: "Local Force.",
+    detailAccent: "Zero Cloud.",
+    detailBody:
+        "The Brain keeps the core of your home running locally, so your system is faster, more private, and more dependable for the things you use every day.",
+    benefits: [
+        {
+            title: "Routines and automations",
+            helperLabel: "What’s this?",
+            helperText:
+                "Routines and automations are actions your home can handle automatically based on time, motion, temperature, a door opening, sunrise, and more.",
+            body:
+                "The Brain can manage routines and automations like turning lights on at the right time, adjusting settings when someone arrives home, or helping multiple devices work together as one system.",
+        },
+        {
+            title: "Faster response throughout the home",
+            body:
+                "Lights, switches, and connected devices react more quickly because the system is working inside your home instead of waiting on a cloud service.",
+        },
+        {
+            title: "More privacy and control",
+            helperLabel: "What’s this?",
+            helperText:
+                "Local control means the system keeps more of its decision-making and data inside your home instead of depending on an outside company for every action.",
+            body:
+                "Your home data stays closer to home, giving you more control over what is stored, what is shared, and how the system behaves day to day.",
+        },
+        {
+            title: "Devices working together",
+            helperLabel: "Example",
+            helperText:
+                "One action can trigger several things at once, like dimming lights, locking doors, and adjusting the thermostat together.",
+            body:
+                "The Brain helps bring devices together so your home feels more unified instead of scattered across separate apps and disconnected settings.",
+        },
+    ],
+},
     {
         id: "02",
         slug: "vision",

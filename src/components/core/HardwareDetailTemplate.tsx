@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { InfoTip } from "@/components/ui/InfoTip";
 import { Container } from "@/components/ui/Container";
 import { Footer } from "@/components/layout/Footer";
 import type { HardwareItem } from "@/data/hardware";
@@ -69,9 +70,34 @@ export const HardwareDetailTemplate = ({ item }: HardwareDetailTemplateProps) =>
                                 <span className="text-white/20">{item.detailAccent}</span>
                             </h2>
 
-                            <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-lg mb-8">
-                                {item.detailBody}
-                            </p>
+			<p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-lg mb-8">
+   				 {item.detailBody}
+			</p>
+
+			{item.benefits && item.benefits.length > 0 && (
+    				<div className="mt-10 space-y-6">
+        				{item.benefits.map((benefit) => (
+            					<div key={benefit.title} className="border-t border-white/10 pt-6">
+                					<div className="flex flex-wrap items-center gap-3">
+                    						<h3 className="text-sm font-black uppercase tracking-[0.2em] text-white">
+                       							 {benefit.title}
+                    						</h3>
+
+               						        {benefit.helperText && (
+                       							 <InfoTip
+                           							 buttonText={benefit.helperLabel || "What’s this?"}
+                           							 text={benefit.helperText}
+                       							 />
+                   						 )}
+                					</div>
+
+                					<p className="mt-3 text-sm leading-7 text-white/70 max-w-xl">
+                    						{benefit.body}
+                					</p>
+            					</div>
+        				))}
+    				</div>
+			)}
                         </div>
                     </div>
                 </Container>
