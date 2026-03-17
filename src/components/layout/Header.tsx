@@ -168,16 +168,6 @@ export const Header = () => {
                                 variants={linkVariants}
                                 className="flex flex-col gap-4 border-t border-white/10 pt-8 mt-12"
                             >
-                                <div className="flex gap-8">
-                                    {[
-                                        { name: "Instagram", href: "https://instagram.com/polksystems" },
-                                        { name: "LinkedIn", href: "https://linkedin.com/company/polksystems" },
-                                    ].map(social => (
-                                        <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/50 hover:text-white transition-colors">
-                                            {social.name}
-                                        </a>
-                                    ))}
-                                </div>
                                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/20 italic">
                                     © {new Date().getFullYear()} POLK SYSTEMS
                                 </p>

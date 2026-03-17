@@ -5,11 +5,6 @@ import { QuickContactForm } from "@/components/forms/QuickContactForm";
 import { Container } from "@/components/ui/Container";
 import { useEffect, useState } from "react";
 
-const socialLinks = [
-    { name: "Instagram", href: "https://instagram.com/polksystems" },
-    { name: "LinkedIn", href: "https://linkedin.com/company/polksystems" },
-];
-
 const siteLinks = {
     company: [
         { name: "Our Story", href: "/story" },
@@ -50,26 +45,12 @@ export function Footer() {
                             Ready to reclaim <br />
                             <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">privacy?</span>
                         </h2>
+                    </div>
 
 			<div className="max-w-md mt-16">
     				<QuickContactForm source="footer" />
 			</div>
 		</div>
-                   {/* Social Links */}
-                    <div className="grid grid-cols-2 gap-4 content-end">
-                        {socialLinks.map((social) => (
-                            <a
-                                key={social.name}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="border border-white/5 aspect-square flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition-all duration-700 text-[10px] font-black uppercase tracking-[0.3em] group shadow-premium"
-                            >
-                                <span className="group-hover:scale-110 transition-transform">{social.name}</span>
-                            </a>
-                        ))}
-                    </div>
-                </div>
 
                 {/* Site Navigation Columns */}
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-16 border-t border-white/5 pt-16 mb-16">
@@ -125,21 +106,9 @@ export function Footer() {
                             <span>System Quiet</span>
                         </div>
                     </div>
-                    <div className="flex gap-8 justify-end text-white/60">
-                        {socialLinks.map((social) => (
-                            <a
-                                key={social.name}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-white transition-colors"
-                            >
-                                {social.name}
-                            </a>
-                        ))}
-                    </div>
-                </div>
+                 </div>
             </Container>
+            
         </footer>
     );
 }
