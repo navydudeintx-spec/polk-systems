@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { initVibeEngine } from "@/animations/master";
 import Lenis from "lenis";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any -- @studio-freight/react-lenis ships React 18 types
-import { ReactLenis as ReactLenisBase } from "@studio-freight/react-lenis";
+import { ReactLenis as ReactLenisBase } from "lenis/react";
 
 const ReactLenis = ReactLenisBase as any;
 
