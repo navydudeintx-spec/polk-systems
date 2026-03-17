@@ -93,30 +93,30 @@ export default function GetStartedPage() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-white/10 border border-white/10">
                         <div className="polk-hover-line p-8 bg-brand-black group hover:bg-white/[0.02] transition-colors">
                             <div className="polk-hover-line-content">
-                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Protocol_01</div>
+                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Phase 01</div>
                                 <h3 className="text-xl font-black uppercase mb-4">Submission</h3>
-                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">Secure transmission of property data to our local server.</p>
+                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">You tell us about your home, the technology already in it, and what you want everything to do in everyday life.</p>
                             </div>
                         </div>
                         <div className="polk-hover-line p-8 bg-brand-black group hover:bg-white/[0.02] transition-colors">
                             <div className="polk-hover-line-content">
-                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Protocol_02</div>
-                                <h3 className="text-xl font-black uppercase mb-4">Analysis</h3>
-                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">Automated feasibility check affecting connectivity & zoning.</p>
+                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Phase 02</div>
+                                <h3 className="text-xl font-black uppercase mb-4">Review</h3>
+                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">We review your information personally to understand your goals, your existing devices, and the best path forward.</p>
                             </div>
                         </div>
                         <div className="polk-hover-line p-8 bg-brand-black group hover:bg-white/[0.02] transition-colors">
                             <div className="polk-hover-line-content">
-                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Protocol_03</div>
+                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Phase 03</div>
                                 <h3 className="text-xl font-black uppercase mb-4">Design</h3>
-                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">A Polk Engineer drafts your bespoke system architecture.</p>
+                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">If the project is a fit, we begin shaping a system plan built around your home, your priorities, and the experience you want every day.</p>
                             </div>
                         </div>
                         <div className="polk-hover-line p-8 bg-brand-black group hover:bg-white/[0.02] transition-colors">
                             <div className="polk-hover-line-content">
-                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Protocol_04</div>
-                                <h3 className="text-xl font-black uppercase mb-4">Deployment</h3>
-                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">White-glove installation and network calibration.</p>
+                                <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Phase 04</div>
+                                <h3 className="text-xl font-black uppercase mb-4">Instalation</h3>
+                                <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">When you are ready to move forward, we install and configure the system so it feels natural, dependable, and easy to use from the start.</p>
                             </div>
                         </div>
                     </div>
