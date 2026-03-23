@@ -10,7 +10,7 @@ interface FormData {
     project_type: string;
     home_size: string;
     room_count: string;
-    property_type: string;
+    property_type: string[];
     systems: string[];
     name: string;
     email: string;
@@ -23,7 +23,7 @@ const INITIAL: FormData = {
     project_type: "",
     home_size: "",
     room_count: "",
-    property_type: "",
+    property_type: [],
     systems: [],
     name: "",
     email: "",
@@ -40,7 +40,18 @@ const PROJECT_TYPES = [
 
 const HOME_SIZES = ["Primary Residence", "Vacation Home", "Airbnb", "Other"];
 const ROOM_COUNTS = ["Security", "Save Money", "Monitor Property","Convenience"];
-const PROPERTY_TYPES = ["Single Family", "Estate", "Condo / Townhome", "Commercial"];
+const PROPERTY_TYPES = [
+  { value: "hue", label: "Hue Lighting" },
+  { value: "robot_vacuums", label: "Robot Vacuums" },
+  { value: "smart_lighting", label: "Smart Lighting" },
+  { value: "smart_switches", label: "Smart Switches" },
+  { value: "alarm_system", label: "Alarm System" },
+  { value: "smart_cameras", label: "Smart Cameras" },
+  { value: "zwave", label: "Any Z-Wave Devices" },
+  { value: "zigbee", label: "Any Zigbee Devices" },
+  { value: "matter", label: "Any Matter Devices" },
+  { value: "none", label: "None" },
+];
 
 const SYSTEMS = [
     { value: "lighting", label: "Smart Lighting" },
@@ -83,6 +94,27 @@ export function AssessmentForm({ source = "contact" }: AssessmentFormProps) {
                 : [...prev.systems, sys],
         }));
     }, []);
+    const togglePropertyType = useCallback((item: string) => {
+    setData((prev) => {
+        const current = prev.property_type;
+
+        if (item === "none") {
+            return {
+                ...prev,
+                property_type: current.includes("none") ? [] : ["none"],
+            };
+        }
+
+        const withoutNone = current.filter((x) => x !== "none");
+
+        return {
+            ...prev,
+            property_type: withoutNone.includes(item)
+                ? withoutNone.filter((x) => x !== item)
+                : [...withoutNone, item],
+        };
+    });
+}, []);
 
     const next = () => {
         setDirection(1);
@@ -97,7 +129,7 @@ export function AssessmentForm({ source = "contact" }: AssessmentFormProps) {
     const canProceed = () => {
         switch (step) {
             case 0: return !!data.project_type;
-            case 1: return !!data.home_size;
+            case 1: return !!data.home_size && data.property_type.length > 0;
             case 2: return data.systems.length > 0;
             case 3: return !!data.name.trim() && !!data.email.trim();
             default: return false;
@@ -258,20 +290,26 @@ export function AssessmentForm({ source = "contact" }: AssessmentFormProps) {
 
                             <div>
                                 <label className="block text-xs font-bold uppercase tracking-[0.2em] text-brand-text-muted mb-4 font-sans">
-                                    Property Type
+                                        Existing technologies you want us to integrate
                                 </label>
                                 <div className="grid grid-cols-2 gap-3">
                                     {PROPERTY_TYPES.map((type) => (
                                         <button
-                                            key={type}
+                                            key={type.value}
                                             type="button"
-                                            onClick={() => update("property_type", type)}
-                                            className={`border p-4 font-sans text-sm transition-all ${data.property_type === type
-                                                ? "border-brand-accent text-brand-white bg-brand-accent/5"
-                                                : "border-white/10 text-brand-text-muted hover:border-white/30"
-                                                }`}
+                                            onClick={() => togglePropertyType(type.value)}
+                                            className={`border p-4 font-sans text-sm transition-all ${
+                                                data.property_type.includes(type.value)
+                                                    ? "border-brand-accent text-brand-white bg-brand-accent/5"
+                                                    : "border-white/10 text-brand-text-muted hover:border-white/30"
+                                }`}
                                         >
-                                            {type}
+                                <div className="flex items-center justify-between gap-3">
+                                    <span>{type.label}</span>
+                                    {data.property_type.includes(type.value) && (
+                                        <Check className="w-4 h-4 text-brand-accent" />
+                                )}
+                                </div>
                                         </button>
                                     ))}
                                 </div>

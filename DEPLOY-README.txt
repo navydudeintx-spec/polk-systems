@@ -5,6 +5,23 @@ git push origin main
 Polk Systems Website Deploy Notes
 =================================
 
+## Run locally
+
+1. Open a terminal in the project folder
+2. Install dependencies:
+   npm install
+3. Start the development server:
+   npm run dev
+4. Open:
+   http://localhost:3000
+
+## Production test locally
+
+1. Build the app:
+   npm run build
+2. Start the production server:
+   npm run start
+
 Local repo location:
 C:\Users\navyd_1sjitwl\Documents\site\Polk-Systems
 

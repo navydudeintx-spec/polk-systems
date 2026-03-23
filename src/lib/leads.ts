@@ -19,7 +19,7 @@ export interface Lead {
     project_type?: "new_build" | "retrofit" | "consultation";
     home_size?: string;
     room_count?: string;
-    property_type?: string;
+    property_type?: string[];
 
     // Interest
     systems?: string[];
@@ -184,7 +184,7 @@ export async function submitLead(formData: {
     project_type?: string;
     home_size?: string;
     room_count?: string;
-    property_type?: string;
+    property_type?: string[];
     systems?: string[];
     message?: string;
     source?: string;
