@@ -11,7 +11,7 @@ export default function Solutions() {
   {
     code: "ASSESSMENT_01",
     title: "Private Home Assessment",
-    price: "$149",
+    price: "$99",
     note: "Credited toward approved projects",
     description:
       "A guided review of your home, goals, privacy concerns, and existing devices so you know what to keep, what to replace, and what to do next.",
