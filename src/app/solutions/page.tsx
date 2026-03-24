@@ -162,7 +162,7 @@ export default function Solutions() {
                 </div>    
 
                     <div className="md:col-span-3 bg-white/5 relative overflow-hidden hidden md:block">
-                        <div className="absolute inset-0 bg-[url('/solutions-hero.png')] bg-cover bg-center grayscale opacity-40 mix-blend-overlay" />
+                        <div className="absolute inset-0 bg-[url('/hero-v2.png')] bg-cover bg-center grayscale opacity-40 mix-blend-overlay" />
                         <div className="absolute bottom-12 right-12 z-20 text-right">
                             <span className="text-[10px] font-mono whitespace-pre opacity-30">
                                 LOC: 29.7604° N, 95.3698° W{"\n"}
