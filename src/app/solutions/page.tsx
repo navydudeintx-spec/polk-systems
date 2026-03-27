@@ -26,12 +26,12 @@ export default function Solutions() {
   {
     code: "RESCUE_02",
     title: "Smart Home Rescue / Cleanup",
-    price: "Starting at $299",
+    price: "Starting at $249 + hardware",
     note: "Best for existing smart-home setups",
     description:
-      "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again.",
+      "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again.  (See 'Items we integrate' in downloadable catalog for more information)",
     bullets: [
-      "Broken routine repair",
+      "Download Catalog for compatible devices",
       "App consolidation",
       "Device troubleshooting and optimization",
     ],
@@ -42,13 +42,13 @@ export default function Solutions() {
     code: "CORE_03",
     title: "Local Core Installation",
     price: "Starting at $899",
-    note: "Privacy-first local control",
+    note: "Private, responsive, local control",
     description:
-      "A local smart-home foundation built for speed, reliability, and ownership of your data without depending on cloud automations.",
+      "Establish a powerful smart-home foundation with a dedicated local controller built for speed, reliability, and greater control over your data. This is the perfect entry point for homeowners who want a refined system now with the flexibility to grow into more advanced features later.",
     bullets: [
-      "Local controller setup",
-      "Dashboard configuration",
-      "Core automations and owner handoff",
+      "Dedicated local controller setup",
+      "Mobile, tablet, and custom dashboard configuration",
+      "Download our catalog for detailed plan information and hardware options",
     ],
     href: "/get-started",
     cta: "Start Project",
