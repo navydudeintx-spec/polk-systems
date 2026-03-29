@@ -31,7 +31,7 @@ export default function Solutions() {
     description:
       "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again.  (See 'Items we integrate' in downloadable catalog for more information)",
     bullets: [
-      "Download Catalog for compatible devices",
+      "Download our catalog for detailed plan information and hardware options",
       "App consolidation",
       "Device troubleshooting and optimization",
     ],
@@ -41,12 +41,12 @@ export default function Solutions() {
   {
     code: "CORE_03",
     title: "Local Core Installation",
-    price: "Starting at $899",
+    price: "Starting at $799",
     note: "Private, responsive, local control",
     description:
-      "Establish a powerful smart-home foundation with a dedicated local controller built for speed, reliability, and greater control over your data. This is the perfect entry point for homeowners who want a refined system now with the flexibility to grow into more advanced features later.",
+      "Build your smart home on a dedicated local controller designed for speed, reliability, and true ownership of your system and data. It is the ideal way to start with a solid foundation today while leaving room to expand with additional devices, features, and automations over time.",
     bullets: [
-      "Dedicated local controller setup",
+      "Local controller installation and setup",
       "Mobile, tablet, and custom dashboard configuration",
       "Download our catalog for detailed plan information and hardware options",
     ],
@@ -55,15 +55,15 @@ export default function Solutions() {
   },
   {
     code: "COMFORT_04",
-    title: "Lighting & Comfort Automation",
-    price: "Starting at $1,250 + hardware",
-    note: "Daily-use automation package",
+    title: "Lighting & Comfort Package",
+    price: "Starting at $1,450 + hardware",
+    note: "Smarter comfort in every season",
     description:
-      "Smarter lighting, better comfort, and routines built around how you actually live in the home every day.",
+      "Our Comfort Package brings climate, shading, and airflow together into one coordinated system designed to keep your home more comfortable throughout the day. By combining smart vents, automatic shade control, and a digital thermostat, your home can respond more intelligently to temperature, sunlight, and save you money.",
     bullets: [
-      "Lighting scenes and schedules",
-      "Motion-based logic",
-      "Climate and comfort routines",
+      "Smart vent control for improved room-by-room airflow",
+      "Automatic shade adjustments based on time of day, sunlight, or temperature",
+      "Coordinated control between vents, shades, and climate settings",
     ],
     href: "/get-started",
     cta: "Plan My System",
@@ -71,7 +71,7 @@ export default function Solutions() {
   {
     code: "CAMERA_05",
     title: "Privacy-First Camera Systems",
-    price: "Starting at $1,750 + hardware",
+    price: "Starting at $1,550 + hardware",
     note: "Local recording focused",
     description:
       "Security designed for your home without turning your family’s routines into someone else’s data product.",
@@ -84,7 +84,22 @@ export default function Solutions() {
     cta: "Request Camera Quote",
   },
   {
-    code: "WHOLEHOME_06",
+  code: "KIDS_07",
+  title: "Kids Brushing Package",
+  price: "Starting at $899 + hardware",
+  note: "Keep an eye on the kids without opening an eye",
+  description:
+    "Its hard enough to get kids to brush their teeth. Our Kids Brushing Package makes it easier by using fun reminders, progress tracking, and parental alerts to turn brushing into a more engaging and consistent routine.",
+  bullets: [
+    "Know the areas that kids are missing and get reminders to brush longer or more thoroughly.",
+    "Reporting to via phone alerts daily, weekly, or monthly",
+    "Customizable reminders and encouragement to make brushing more fun",
+  ],
+  href: "/get-started",
+  cta: "Explore Energy",
+},
+  {
+    code: "WHOLEHOME_08",
     title: "Whole-Home Design & Integration",
     price: "Custom Quote",
     note: "Most integrated projects start at $3,500+",
@@ -98,6 +113,7 @@ export default function Solutions() {
     href: "/contact",
     cta: "Request Custom Quote",
   },
+ 
 ];
 
     return (
@@ -301,8 +317,9 @@ export default function Solutions() {
         </div>
         <div className="mt-3 text-lg text-white">Starting prices shown.</div>
         <p className="mt-2 text-sm leading-6 text-white/60">
-          Final pricing depends on home size, device count, wiring, and the
-          brands you want to keep or add.
+          Final pricing depends on options, device count, customizations, brands
+          and any existing items you want to intergrate. Please download our catalog 
+          for more detailed information.
         </p>
       </div>
     </div>
