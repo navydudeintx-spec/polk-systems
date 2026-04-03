@@ -109,9 +109,43 @@ export const hardwareItems: HardwareItem[] = [
             "A smart home should not require a lesson every time someone walks into a room. We keep the familiar light switch at the center and let the automation support it.",
         detailEyebrow: "User_Interface: Light Switch",
         detailTitle: "Use The Switch.",
-        detailAccent: "Get The Magic.",
+        detailAccent: "Feel The Home Respond.",
         detailBody:
-            "The biggest deal is simple: if you can use a light switch, you can use our automation. No confusing dashboards required for everyday living. The switch still works like a switch, while the home handles the rest.",
+            "The biggest deal is simple: if you can use a light switch, you can use our automation. Everyday control stays familiar, while the home quietly handles the layers of comfort, convenience, and intelligence behind the scenes.",
+        benefits: [
+            {
+                title: "Routines and automations",
+                helperLabel: "What’s this?",
+                helperText:
+                    "Routines and automations are actions your home can handle automatically based on time, motion, temperature, a door opening, sunrise, and more.",
+                body:
+                    "The Brain can manage routines and automations like turning lights on at the right time, adjusting settings when someone arrives home, or helping multiple devices work together as one system.",
+            },
+            {
+                title: "Faster response throughout the home",
+                helperLabel: "What’s this?",
+                helperText:
+                    "Lights, switches, and connected devices react more quickly because the system is working inside your home instead of waiting on a cloud service.",
+                body:
+                    "The Brain can manage routines and automations like turning lights on at the right time, adjusting settings when someone arrives home, or helping multiple devices work together as one system.",
+            },
+            {
+                title: "More privacy and control",
+                helperLabel: "What’s this?",
+                helperText:
+                    "Local control means the system keeps more of its decision-making and data inside your home instead of depending on an outside company for every action.",
+                body:
+                    "Your home data stays closer to home, giving you more control over what is stored, what is shared, and how the system behaves day to day.",
+            },
+            {
+                title: "Devices working together",
+                helperLabel: "Example",
+                helperText:
+                    "One action can trigger several things at once, like dimming lights, locking doors, and adjusting the thermostat together.",
+                body:
+                    "The Brain helps bring devices together so your home feels more unified instead of scattered across separate apps and disconnected settings.",
+            },
+        ],
     },
     {
         id: "04",
