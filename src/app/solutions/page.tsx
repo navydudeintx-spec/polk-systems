@@ -71,20 +71,20 @@ export default function Solutions() {
   {
     code: "CAMERA_05",
     title: "Privacy-First Camera Systems",
-    price: "Starting at $1,550 + hardware",
-    note: "Local recording focused",
+    price: "Starting at $1,150 + hardware",
+    note: "Premium camera coverage without cloud dependence.",
     description:
-      "Security designed for your home without turning your family’s routines into someone else’s data product.",
+      "We build local-first camera systems designed to give you better awareness, more useful alerts, and stronger evidence without turning everyday life into someone else’s data stream.",
     bullets: [
-      "Local recording design",
-      "Camera setup and alerts",
-      "Retention and mobile access setup",
-    ],
-    href: "/get-started",
-    cta: "Request Camera Quote",
-  },
+    "Local recording architecture and retention planning",
+    "Camera placement, detection tuning, and alert setup",
+    "Mobile access, review workflow, and owner handoff",
+  ],
+  href: "/get-started",
+  cta: "Request Camera Quote",
+},
   {
-  code: "KIDS_07",
+  code: "KIDS_06",
   title: "Kids Brushing Package",
   price: "Starting at $899 + hardware",
   note: "Keep an eye on the kids without opening an eye",
@@ -99,7 +99,7 @@ export default function Solutions() {
   cta: "Explore Energy",
 },
   {
-    code: "WHOLEHOME_08",
+    code: "WHOLEHOME_07",
     title: "Whole-Home Design & Integration",
     price: "Custom Quote",
     note: "Most integrated projects start at $3,500+",
@@ -319,7 +319,9 @@ export default function Solutions() {
         <p className="mt-2 text-sm leading-6 text-white/60">
           Final pricing depends on options, device count, customizations, brands
           and any existing items you want to intergrate. Please download our catalog 
-          for more detailed information.
+          for more detailed information. Need to understand the terminology or what our system can do <a href="/downloads/termsexplained.pdf" download>
+  click here
+</a>
         </p>
       </div>
     </div>
