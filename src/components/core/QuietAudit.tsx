@@ -16,7 +16,7 @@ export const QuietAudit = () => {
             options: [
                 { text: "In my home", value: 100 },
                 { text: "On the cloud", value: 0 },
-                { text: "I&apos;m not sure", value: 20 }
+                { text: "I am not sure", value: 20 }
             ]
         },
         {
