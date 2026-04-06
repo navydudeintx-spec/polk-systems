@@ -303,28 +303,36 @@ export default function Solutions() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mb-12 grid gap-8 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                         <div>
-                            <div className="mb-4 text-[11px] uppercase tracking-[0.35em] text-white/40">
-                                SERVICE_MATRIX_01
-                            </div>
+                          <div className="mb-4 text-[11px] uppercase tracking-[0.35em] text-white/40">
+                            SERVICE_MATRIX_01
+                          </div>
 
-                            <h2 className="max-w-4xl text-4xl font-light tracking-tight text-white sm:text-5xl">
-                                Services &amp; Starting Prices
-                            </h2>
+                          <h2 className="max-w-4xl text-4xl font-light tracking-tight text-white sm:text-5xl">
+                            Services &amp; Starting Prices
+                          </h2>
 
-                            <p className="mt-6 max-w-3xl text-base leading-7 text-white/70">
-                                Every home is different. These prices cover planning, setup,
-                                configuration, and owner handoff. Hardware is quoted separately where
-                                needed. Need to understand the terminology or what our system can do?{" "}
-                                <a
-                                    href="/downloads/termsexplained.pdf"
-                                    download
-                                    className="text-white underline underline-offset-4 hover:text-white/80"
-                                >
-                                    Click here
-                                </a>
-                                .
-                            </p>
-                        </div>
+                          <p className="mt-6 max-w-3xl text-base leading-7 text-white/70">
+                            Every home is different. These prices cover planning, setup,
+                            configuration, and owner handoff. Hardware is quoted separately where
+                            needed. Need to understand the terminology or what our system can do?{" "}
+                          <a
+                            href="/downloads/termsexplained.pdf"
+                            download
+                            className="text-white underline underline-offset-4 hover:text-white/80"
+                          >
+                            Click here
+                        </a>
+                        . To download the full catalog{" "}
+                        <a
+                          href="/downloads/Polk_Systems_v2.pdf"
+                          download
+                          className="text-white underline underline-offset-4 hover:text-white/80"
+                        >
+                        click here
+                      </a>
+                    .
+                  </p>
+              </div>
 
                         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
                             <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
