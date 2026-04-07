@@ -3,6 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
+import { POLK_COPY } from "@/lib/polk-copy";
 
 export default function TermsPage() {
     return (
@@ -57,12 +58,7 @@ export default function TermsPage() {
                                         02. Local-First Operation
                                     </h2>
                                     <p className="text-sm font-black uppercase tracking-widest leading-loose text-white/60">
-                                        Polk Systems is generally designed so core automations,
-                                        dashboards, and local device control operate on equipment
-                                        installed in the customer&apos;s home. Some third-party
-                                        products, voice assistants, mobile apps, remote-access
-                                        services, and manufacturer integrations may still rely on
-                                        outside services that Polk Systems does not own or control.
+                                       {POLK_COPY.localFirstLegal}
                                     </p>
                                 </section>
 

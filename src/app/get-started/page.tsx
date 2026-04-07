@@ -115,7 +115,7 @@ export default function GetStartedPage() {
                         <div className="polk-hover-line p-8 bg-brand-black group hover:bg-white/[0.02] transition-colors">
                             <div className="polk-hover-line-content">
                                 <div className="text-brand-accent text-[8px] font-black uppercase tracking-widest mb-12">Phase 04</div>
-                                <h3 className="text-xl font-black uppercase mb-4">Instalation</h3>
+                                <h3 className="text-xl font-black uppercase mb-4">Installation</h3>
                                 <p className="text-[10px] font-black uppercase tracking-widest leading-loose text-white/30 group-hover:text-white/60 transition-colors">When you are ready to move forward, we install and configure the system so it feels natural, dependable, and easy to use from the start.</p>
                             </div>
                         </div>

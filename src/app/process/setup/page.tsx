@@ -29,7 +29,7 @@ export default function SetupPage() {
                         <div className="md:col-span-4">
                             <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-4 block">Phase Two</span>
                             <p className="text-lg text-white/60 leading-relaxed font-medium">
-                                Our engineers build your custom "Home Core" off-site. We configure, text, and burn-in every server rack for 48 hours before it ever touches your home.
+                                Our engineers build your custom "Home Core" off-site. We configure, test, and burn-in every controller for 48 hours before it ever touches your home.
                             </p>
                         </div>
                         <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">

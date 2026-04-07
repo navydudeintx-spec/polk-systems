@@ -84,22 +84,7 @@ export default function Solutions() {
             cta: "Request Camera Quote",
         },
         {
-            code: "KIDS_06",
-            title: "Kids Brushing Package",
-            price: "Starting at $699 + hardware",
-            note: "Keep an eye on the kids without opening an eye",
-            description:
-                "Its hard enough to get kids to brush their teeth. Our Kids Brushing Package makes it easier by using fun reminders, progress tracking, and parental alerts to turn brushing into a more engaging and consistent routine.",
-            bullets: [
-                "Know the areas that kids are missing and get reminders to brush longer or more thoroughly.",
-                "Reporting to via phone alerts daily, weekly, or monthly",
-                "Customizable reminders and encouragement to make brushing more fun",
-            ],
-            href: "/get-started",
-            cta: "Explore Energy",
-        },
-        {
-            code: "WHOLEHOME_07",
+            code: "WHOLEHOME_06",
             title: "Whole-Home Design & Integration",
             price: "Custom Quote",
             note: "Most integrated projects start at $3,500+",
@@ -341,7 +326,7 @@ export default function Solutions() {
                             <div className="mt-3 text-lg text-white">Starting prices shown.</div>
                             <p className="mt-2 text-sm leading-6 text-white/60">
                                 Final pricing depends on options, device count, customizations, brands
-                                and any existing items you want to intergrate. Please download our catalog
+                                and any existing items you want to integrate. Please download our catalog
                                 for more detailed information.
                             </p>
                         </div>
