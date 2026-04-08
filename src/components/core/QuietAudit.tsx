@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import gsap from "gsap";
 import { Container } from "@/components/ui/Container";
 import Link from 'next/link';
+import { POLK_COPY } from "@/lib/polk-copy";
 
 export const QuietAudit = () => {
     const [step, setStep] = useState(0);

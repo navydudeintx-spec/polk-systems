@@ -17,7 +17,7 @@ const COMPARISON_POINTS = [
     {
         feature: "Connectivity",
         standard: "Fails when WiFi goes down",
-        polk: "Works 100% offline via local LAN",
+        polk: "Core local functions continue operating even if internet-dependent services are unavailable",
         icon: Cpu
     },
     {
@@ -169,7 +169,7 @@ export default function WhyWereDifferentPage() {
                                     Consumer tech is designed to be replaced every 2 years. We engineer systems like home infrastructure—meant to last as long as your copper pipes or electrical wiring.
                                 </p>
                                 <p className="text-brand-white text-[10px] font-black uppercase tracking-widest leading-loose md:border-r border-l md:border-l-0 border-brand-accent/30 md:pr-8 pl-8 md:pl-0">
-                                    Our servers are enterprise-grade. Our switches are rated for millions of cycles. We build systems that you can pass down to the next generation.
+                                    Our systems are enterprise-grade. We build systems that you can pass down to the next generation.
                                 </p>
                             </div>
                             <div className="order-1 md:order-2 relative aspect-square bg-white/[0.02] flex items-center justify-center border border-white/10">

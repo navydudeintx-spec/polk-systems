@@ -9,8 +9,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const points = [
     {
         id: "01",
-        title: "No Cloud. No Trap.",
-        desc: "Your home works even if the internet doesn&apos;t. Everything stays local.",
+        title: "Local-First. Built for Control.",
+        desc: "Core automation and daily control stay in the home. Certain customer-requested third-party features may rely on external cloud services.",
         icon: "WifiOff"
     },
     {

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { Shield, Brain, Cpu, ArrowRight } from "lucide-react";
 import { TechnicalHeading } from "@/components/core/TechnicalHeading";
+import { POLK_COPY } from "@/lib/polk-copy";
 
 export default function Solutions() {
     const services = [
@@ -200,7 +201,7 @@ export default function Solutions() {
                         {
                             title: "Private By Design",
                             icon: Shield,
-                            desc: "Your home data stays where it belongs. We prioritize local control and privacy-first choices so your system works for your family, not for a cloud company.",
+                            desc: "Polk Systems is built local-first, keeping core control and activity in the home while supporting select third-party features that may rely on external cloud services when requested by the customer.",
                             stat: "LOCAL-FIRST APPROACH",
                         },
                     ].map((feature, i) => (

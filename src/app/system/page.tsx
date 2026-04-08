@@ -58,7 +58,7 @@ export default function SystemPage() {
                             <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-6 block">Latency_Check: 0.02ms</span>
                             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-8">
                                 Local Force.<br />
-                                <span className="text-white/20">Zero Cloud.</span>
+                                <span className="text-white/20">Local-First.</span>
                             </h2>
                             <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-lg mb-8">
                                 Because your data is local, it is instantly accessible. If you need to know what happened yesterday, you don’t need to submit a request to a cloud provider. You own the history. You hold the keys.

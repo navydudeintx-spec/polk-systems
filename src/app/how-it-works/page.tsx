@@ -105,7 +105,7 @@ export default function HowItWorksPage() {
                         {/* Pillar 1 */}
                         <div className="group p-12 bg-brand-black hover:bg-white/[0.03] transition-colors duration-500">
                             <span className="text-[10px] font-black uppercase tracking-widest text-white/20 mb-12 block group-hover:text-brand-accent transition-colors">01. The Local Brain</span>
-                            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-brand-white leading-none">Zero Cloud.<br />Zero Lag.</h3>
+                            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-brand-white leading-none">Local Processing.<br />Fast Response.</h3>
                             <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose">
                                 Everything runs locally on a compact controller in your utility closet—taking up just a few inches. No internet required for daily operation. Your light switches work normally, but double-tap up or down (or multi-tap) to trigger automations and unlock custom actions.
                             </p>

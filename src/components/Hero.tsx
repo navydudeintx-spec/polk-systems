@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TechnicalHeading } from "./core/TechnicalHeading";
+import { POLK_COPY } from "@/lib/polk-copy";
 
 const SystemStatus = ({ progress }: { progress: number }) => {
     let status = "SYSTEM: ONLINE";
@@ -131,7 +132,7 @@ export function Hero() {
                                 <p className="text-white/60 text-xs font-bold leading-loose uppercase tracking-widest max-w-md">
                                     A home that looks out for you, <br />
                                     without looking into your life. <br />
-                                    No cloud, no prying eyes.
+                                    {POLK_COPY.localFirstShort}
                                 </p>
                             </div>
                             <Link href="/story" className="group flex items-center gap-6 text-xs font-black uppercase tracking-[0.4em] text-brand-accent hover:text-white transition-colors duration-500 pb-2 border-b border-brand-accent/30 hover:border-white">

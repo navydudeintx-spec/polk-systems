@@ -1,8 +1,9 @@
-"use client";
-
+"use client"; 
 import { Container } from "@/components/ui/Container";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
+import { POLK_COPY } from "@/lib/polk-copy"
+
 
 export default function PrivacyPolicyPage() {
     return (
@@ -29,11 +30,8 @@ export default function PrivacyPolicyPage() {
 
                         <div className="space-y-16 border-t border-white/10 pt-16">
                             <div className="border-l border-brand-accent/30 pl-8">
-                                <p className="text-xl md:text-2xl text-brand-white/80 font-medium leading-relaxed">
-                                    At Polk Systems, we design for local-first control and privacy-aware
-                                    operation. This page explains how we handle information when you use
-                                    our website, contact us, purchase services, or operate a Polk Systems
-                                    installation in your home.
+                                <p className="text-sm font-black uppercase tracking-widest leading-loose text-white/60">
+                                    {POLK_COPY.localFirstMaster}
                                 </p>
                             </div>
 
@@ -106,13 +104,7 @@ export default function PrivacyPolicyPage() {
                                         05. Support Access
                                     </h2>
                                     <p className="text-sm font-black uppercase tracking-widest leading-loose text-white/60">
-                                        Polk Systems does not routinely monitor the private activity inside
-                                        your home. If support, troubleshooting, maintenance, migration,
-                                        warranty service, or requested remote assistance is needed, Polk
-                                        Systems may access limited system information necessary to diagnose,
-                                        repair, update, or improve the installed system. Where practical,
-                                        that access is performed with customer knowledge or authorization
-                                        and is limited to the work required.
+                                        {POLK_COPY.remoteSupport}
                                     </p>
                                 </section>
 
