@@ -143,13 +143,13 @@ export default function WhyWereDifferentPage() {
                             <div className="order-2 md:order-1">
                                 <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-6 block">01. Quiet</span>
                                 <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.85]">
-                                    You are not<br />the product.
+                                    Technology should<br />respect the home.
                                 </h2>
                                 <p className="text-white/60 text-lg font-medium leading-relaxed mb-8">
-                                    When you buy a Google or Amazon device, you are paying them to spy on you. They subsidize the hardware costs by harvesting your behavioral data.
+                                    Many popular smart home devices are designed to depend on outside platforms that monetize convenience through data collection.
                                 </p>
                                 <p className="text-brand-white text-[10px] font-black uppercase tracking-widest leading-loose border-l border-brand-accent/30 pl-8">
-                                    Polk Systems is a hardware company, not a data broker. You pay a fair price for premium equipment, and in exchange, we leave you alone. Your home is your sanctuary, not our data farm.
+                                    ou pay for quality hardware, thoughtful design, and a system centered on the home rather than on surveillance-driven business models.
                                 </p>
                             </div>
                             <div className="order-1 md:order-2 relative aspect-square bg-white/[0.02] flex items-center justify-center border border-white/10">
@@ -163,10 +163,10 @@ export default function WhyWereDifferentPage() {
                             <div className="md:text-right order-2 md:order-1">
                                 <span className="text-brand-accent text-[10px] font-black uppercase tracking-widest mb-6 block">02. Longevity</span>
                                 <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-[0.85]">
-                                    Built for<br />Decades.
+                                    Built for the<br />long term.
                                 </h2>
                                 <p className="text-white/60 text-lg font-medium leading-relaxed mb-8">
-                                    Consumer tech is designed to be replaced every 2 years. We engineer systems like home infrastructure—meant to last as long as your copper pipes or electrical wiring.
+                                    We design systems with durable hardware, local-first architecture, and long-term reliability so they feel like part of the home, not like disposable electronics.
                                 </p>
                                 <p className="text-brand-white text-[10px] font-black uppercase tracking-widest leading-loose md:border-r border-l md:border-l-0 border-brand-accent/30 md:pr-8 pl-8 md:pl-0">
                                     Our systems are enterprise-grade. We build systems that you can pass down to the next generation.
