@@ -35,18 +35,29 @@ export function Footer() {
     }, []);
 
     return (
-        <footer id="get-in-touch" className="bg-brand-black text-brand-white border-t border-white/5 py-32">
-            <Container>
-                {/* Contact Section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-32">
-                    <div>
-                        <span className="text-brand-accent text-xs font-black tracking-[0.4em] uppercase opacity-60">Get in touch</span>
-                        <h2 className="text-5xl md:text-7xl font-black mt-8 uppercase tracking-tighter leading-[0.85]">
-                            Ready to reclaim <br />
-                            <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">privacy?</span>
-                        </h2>
-                    </div>
+   <footer id="get-in-touch" className="bg-brand-black text-brand-white border-t border-white/5 py-32">
+  <Container>
+    {/* Contact Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-32">
+      <div>
+        <span className="text-brand-accent text-xs font-black tracking-[0.4em] uppercase opacity-60">
+          Get in touch
+        </span>
 
+        <h2 className="text-5xl md:text-7xl font-black mt-8 uppercase tracking-tighter leading-[0.85]">
+          Ready to reclaim <br />
+          <span className="font-serif italic font-normal normal-case tracking-normal text-brand-accent">
+            privacy?
+          </span>
+        </h2>
+
+        <a
+          href="tel:+12142076391"
+          className="mt-6 block text-lg md:text-xl text-white/70 transition hover:text-white"
+        >
+          (214) 207-6391
+        </a>
+      </div>
 			<div className="max-w-md mt-16">
     				<QuickContactForm source="footer" />
 			</div>
