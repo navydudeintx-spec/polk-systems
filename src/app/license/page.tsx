@@ -1,109 +1,12 @@
-"use client";
+import type { Metadata } from "next";
+import LicensePageClient from "./license";
 
-import { Container } from "@/components/ui/Container";
-import { Footer } from "@/components/layout/Footer";
-import { motion } from "framer-motion";
-import { POLK_COPY } from "@/lib/polk-copy";
+export const metadata: Metadata = {
+  title: "License | Polk Systems",
+  description:
+    "Review the Polk Systems license terms for software, system configuration, documentation, and permitted use of the services and materials provided with your installation.",
+};
 
 export default function LicensePage() {
-    return (
-        <div className="bg-brand-black min-h-screen">
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32">
-                <Container>
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="max-w-3xl"
-                    >
-                        <h1 className="font-display font-medium text-5xl md:text-7xl leading-[0.9] tracking-tighter text-brand-white mb-8">
-                            LICENSE<br />
-                            <span className="text-brand-text-muted">AGREEMENT.</span>
-                        </h1>
-
-                        <div className="space-y-8 text-brand-text-muted font-sans text-lg leading-relaxed">
-                            <p>
-                                This agreement governs the use of Polk Systems software and hardware deployed in your property. By engaging Polk Systems for installation, you agree to the following terms.
-                            </p>
-
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Software License</h2>
-                                <p>
-                                    Polk Systems grants the customer a limited, non-exclusive, non-transferable, revocable license to use the Polk Systems software and configuration files installed as part of the customer’s home automation system. The software is licensed, not sold, and is authorized only for use on the system installed by Polk Systems at the customer’s property.
-                                </p>
-                            </div>
-
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Data Ownership</h2>
-                                <p>
-                                    The customer may use the software solely for personal operation of the installed Polk Systems environment at the licensed property. The license includes the right to access normal user features, dashboards, automations, and local administrative controls that Polk Systems makes available for that installation.
-                                </p>
-                            </div>
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Restrictions</h2>
-                                <p>
-                                    The customer may not copy, resell, sublicense, distribute, reverse engineer, decompile, publish, or commercially exploit the Polk Systems software or related configuration materials, except to the extent such restriction is prohibited by law. The software may not be transferred to another property, controller, or owner except with written approval from Polk Systems.
-                                </p>
-                            </div>
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Updates and Support</h2>
-                                <p>
-                                    Any updates, patches, reconfiguration work, or support services are provided only as included in the customer’s purchased service package, maintenance plan, or separate written agreement. Polk Systems may discontinue updates for legacy hardware, unsupported integrations, or modified systems.
-                                </p>
-                            </div>
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Third-Party Components</h2>
-                                <p>
-                                    The system may include or interoperate with third-party hardware, firmware, integrations, or open-source software. Those components remain subject to their own applicable license terms, warranties, and support limitations.
-                                </p>
-                            </div>
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Data Ownership</h2>
-                                <p className="text-sm font-black uppercase tracking-widest leading-loose text-white/60">
-                                    All data generated by your Polk System — including sensor logs, behavioral patterns, and security recordings — remains your property. Polk Systems does not claim ownership of customer data. Support access, when authorized by the customer, is limited to the information reasonably necessary to diagnose, maintain, repair, or update the system. You may export, delete, or archive your data at any time through the local admin interface.
-                                </p>
-                                <p className="text-sm font-black uppercase tracking-widest leading-loose text-white/60 mt-4">
-                                    {POLK_COPY.remoteSupport}
-                                </p>
-                            </div>
-                             <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Termination</h2>
-                                <p>
-                                    This license terminates automatically if the customer materially breaches these terms, removes or alters the software outside authorized use, or uses the system in a way not permitted by Polk Systems. Upon termination, the customer’s right to use Polk Systems proprietary software and proprietary configuration materials ends, except where continued local operation is expressly allowed in writing.
-                                </p>
-                            </div> <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Transfer of Property or System</h2>
-                                <p>
-                                    If the home is sold or the system is transferred, continued use of Polk Systems proprietary software, service access, managed support, or administrative rights may require transfer approval, re-provisioning, or a new agreement.
-                                </p>
-                            </div>
-
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Restrictions</h2>
-                                <p>
-                                    You may not reverse-engineer, decompile, or distribute the Polk Core software. Modifications to hardware must be performed by authorized Polk Systems technicians to maintain warranty coverage.
-                                </p>
-                            </div>
-
-                            <div className="border-t border-white/10 pt-8">
-                                <h2 className="font-display text-2xl text-brand-white mb-4">Contact</h2>
-                                <p>
-                                    For licensing inquiries, reach us at{" "}
-                                    <a href="mailto:polk@polksystems.com" className="text-brand-accent hover:underline">
-                                        polk@polksystems.com
-                                    </a>.
-                                </p>
-                            </div>
-
-                            <p className="text-sm text-brand-text-muted/60 pt-8 border-t border-white/10">
-                                Last updated: February 2026
-                            </p>
-                        </div>
-                    </motion.div>
-                </Container>
-            </section>
-
-            <Footer />
-        </div>
-    );
+  return <LicensePageClient />;
 }
