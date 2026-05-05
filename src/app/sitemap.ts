@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/process/control",
         "/get-started",
         "/solutions",
+        "/blog",
         "/system",
         "/technology",
         "/contact",
