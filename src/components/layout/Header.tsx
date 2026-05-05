@@ -63,6 +63,7 @@ export const Header = () => {
         { name: "Why We're Different", href: "/why-we-are-different" },
         { name: "The Process", href: "/process" },
         { name: "Solutions", href: "/solutions" },
+        { name: "Blog", href: "/blog" },
         { name: "Estimate", href: "/estimate-your-investment" },
         { name: "Get in Touch", href: "/#get-in-touch" },
     ];

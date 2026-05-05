@@ -9,6 +9,7 @@ const siteLinks = {
     company: [
         { name: "Our Story", href: "/story" },
         { name: "Contact", href: "/contact" },
+        { name: "Blog", href: "/blog"}
     ],
     services: [
         { name: "How It Works", href: "/how-it-works" },
