@@ -132,7 +132,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </header>
 
         <div
-          className="prose prose-invert mt-12 max-w-none prose-headings:text-white prose-p:text-white/75 prose-a:text-white prose-strong:text-white prose-li:text-white/75"
+          className="blog-content mt-12"
           dangerouslySetInnerHTML={{ __html: post.body ?? "" }}
         />
       </article>
