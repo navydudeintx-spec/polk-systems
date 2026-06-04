@@ -27,10 +27,10 @@ export default function Solutions() {
         {
             code: "RESCUE_02",
             title: "Smart Home Rescue / Cleanup",
-            price: "Starting at $349 + hardware",
+            price: "Starting at $349*",
             note: "Best for existing smart-home setups",
             description:
-                "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again. (See 'Items we integrate' in downloadable catalog for more information)",
+                "For systems that feel fragmented, unreliable, or buried under too many apps. We clean up the setup and make it usable again. Limit 8 per-package. (See 'Items we integrate' in downloadable catalog for more information)",
             bullets: [
                 "Download our catalog for detailed plan information and hardware options",
                 "App consolidation",
@@ -42,7 +42,7 @@ export default function Solutions() {
         {
             code: "CORE_03",
             title: "Local Core Installation",
-            price: "Starting at $799",
+            price: "Starting at $799*",
             note: "Private, responsive, local control",
             description:
                 "Build your smart home on a dedicated local controller designed for speed, reliability, and true ownership of your system and data. It is the ideal way to start with a solid foundation today while leaving room to expand with additional devices, features, and automations over time.",
@@ -57,7 +57,7 @@ export default function Solutions() {
         {
             code: "COMFORT_04",
             title: "Lighting & Comfort Package",
-            price: "Starting at $1,450 + hardware",
+            price: "Starting at $1,550*",
             note: "Smarter comfort in every season",
             description:
                 "Our Comfort Package brings climate, shading, and airflow together into one coordinated system designed to keep your home more comfortable throughout the day. By combining smart vents, automatic shade control, and a digital thermostat, your home can respond more intelligently to temperature, sunlight, and save you money.",
@@ -72,7 +72,7 @@ export default function Solutions() {
         {
             code: "CAMERA_05",
             title: "Privacy-First Camera Systems",
-            price: "Starting at $1,150 + hardware",
+            price: "Starting at $1,150*",
             note: "Premium camera coverage without cloud dependence.",
             description:
                 "We build local-first camera systems designed to give you better awareness, more useful alerts, and stronger evidence without turning everyday life into someone else’s data stream.",
@@ -297,38 +297,36 @@ export default function Solutions() {
                             Services &amp; Starting Prices
                           </h2>
 
-                          <p className="mt-6 max-w-3xl text-base leading-7 text-white/70">
+                                                    <p className="mt-6 max-w-3xl text-base leading-7 text-white/70">
                             Every home is different. These prices cover planning, setup,
-                            configuration, and owner handoff. Hardware is quoted separately where
-                            needed. Need to understand the terminology or what our system can do?{" "}
-                          <a
-                            href="/downloads/termsexplained.pdf"
-                            download
-                            className="text-white underline underline-offset-4 hover:text-white/80"
-                          >
-                            Click here
-                        </a>
-                        . To download the full catalog{" "}
-                        <a
-                          href="/downloads/Polk_Systems_v2.pdf"
-                          download
-                          className="text-white underline underline-offset-4 hover:text-white/80"
-                        >
-                        click here
-                      </a>
-                    .
-                  </p>
+                            configuration, and owner handoff. Starting package hardware is included where
+                            shown in the catalog. Need to understand the terminology or what our system can do?{" "}
+                            <a
+                              href="/downloads/termsexplained.pdf"
+                              download
+                              className="text-white underline underline-offset-4 hover:text-white/80"
+                            >
+                              Click here
+                            </a>
+                            . To download the full catalog{" "}
+                            <a
+                              href="/downloads/Polk_Systems_v2.pdf"
+                              download
+                              className="text-white underline underline-offset-4 hover:text-white/80"
+                            >
+                              click here
+                            </a>
+                            .
+                          </p>
               </div>
 
                         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm">
                             <div className="text-[11px] uppercase tracking-[0.3em] text-white/40">
                                 PRICING_MODE
                             </div>
-                            <div className="mt-3 text-lg text-white">Starting prices shown.</div>
                             <p className="mt-2 text-sm leading-6 text-white/60">
-                                Final pricing depends on options, device count, customizations, brands
-                                and any existing items you want to integrate. Please download our catalog
-                                for more detailed information.
+                                Starting prices include the standard package items shown in the catalog where applicable. Final pricing may vary based on device count, selected brands, upgraded sensors, added hardware, custom programming, and existing equipment you want integrated.
+                                See the catalog beginning on page 15 for included package hardware, substitutions, and add-ons.
                             </p>
                         </div>
                     </div>
@@ -409,6 +407,12 @@ export default function Solutions() {
                             </motion.article>
                         ))}
                     </div>
+                    <p className="mt-8 max-w-5xl text-sm leading-6 text-white/55">
+                        *Starting prices include the standard package hardware shown in the catalog where applicable.
+                        Final pricing may vary based on device count, selected brands, upgraded sensors, added hardware,
+                        custom programming, and existing equipment you want integrated. See the catalog beginning on page
+                        15 for included package hardware, substitutions, and add-ons.
+                    </p>                   
                 </div>
             </section>
 
