@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Warranty | Polk Systems",
   description:
     "Review the Polk Systems warranty covering workmanship, eligible hardware support, service limitations, and the terms that apply to installed systems and related components.",
+  alternates: {
+  canonical: "/warranty",
+},
 };
 
 export default function WarrantyPage() {

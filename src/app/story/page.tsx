@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Our Story | Polk Systems",
   description:
     "Learn the story behind Polk Systems, the values that shaped the company, and the local-first approach to building thoughtful, elegant smart home systems.",
+  alternates: {
+  canonical: "/story",
+},
 };
 
 export default function StoryPage() {

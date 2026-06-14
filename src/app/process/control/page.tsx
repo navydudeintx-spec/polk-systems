@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 
 import Link from "next/link";
 
+
 export default function ControlPage() {
     return (
         <div className="bg-brand-black min-h-screen text-brand-white selection:bg-brand-accent selection:text-black">

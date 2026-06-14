@@ -14,6 +14,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://polk-systems.com"),
   title: "Polk Systems | One System. Zero Stress.",
   description: "Advanced home automation with strategic minimalism. Technology without the stress.",
   manifest: "/manifest.json",

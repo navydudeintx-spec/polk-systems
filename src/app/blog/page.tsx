@@ -32,12 +32,33 @@ function formatDate(value?: string) {
 async function getPosts(): Promise<ButterPostSummary[]> {
   try {
     const butter = getButterClient();
-    const response = await butter.post.list({
-      page: 1,
-      page_size: 10,
-    });
 
-    return (response.data?.data ?? []) as ButterPostSummary[];
+    const allPosts: ButterPostSummary[] = [];
+    const pageSize = 100;
+    let page = 1;
+
+    while (true) {
+      const response = await butter.post.list({
+        page,
+        page_size: pageSize,
+      });
+
+      const posts = (response.data?.data ?? []) as ButterPostSummary[];
+
+      if (posts.length === 0) {
+        break;
+      }
+
+      allPosts.push(...posts);
+
+      if (posts.length < pageSize) {
+        break;
+      }
+
+      page += 1;
+    }
+
+    return allPosts;
   } catch (error) {
     console.error("[ButterCMS] Failed to load blog posts:", error);
     return [];

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contact Polk Systems",
   description:
     "Schedule a private home assessment or contact Polk Systems about lighting, access control, cameras, and local-first smart home automation.",
+  alternates: {
+  canonical: "/contact",
+},
 };
 
 export default function ContactPage() {

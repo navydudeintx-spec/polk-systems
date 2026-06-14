@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "How It Works | Polk Systems",
   description:
     "See how Polk Systems takes a smart home project from consultation to design, installation, integration, and long-term support with a local-first, unified approach.",
+  alternates: {
+  canonical: "/how-it-works",
+},
 };
 
 export default function HowItWorksPage() {

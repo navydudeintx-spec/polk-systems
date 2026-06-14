@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { AtmosphericTrust } from "@/components/core/AtmosphericTrust";
 import { HardwareSpotlight } from "@/components/core/HardwareSpotlight";
@@ -6,6 +7,15 @@ import { BrandGrid } from "@/components/core/BrandGrid";
 import { ProcessSection } from "@/components/core/ProcessSection";
 import { QuietAudit } from "@/components/core/QuietAudit";
 import { Footer } from "@/components/layout/Footer";
+
+export const metadata: Metadata = {
+  title: "Polk Systems | One System. Zero Stress.",
+  description:
+    "Advanced home automation with strategic minimalism. Technology without the stress.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

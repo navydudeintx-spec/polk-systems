@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Solutions | Polk Systems",
   description:
     "Explore Polk Systems solutions for lighting, access control, cameras, comfort, energy, and unified local-first smart home automation designed around the way you live.",
+  alternates: {
+  canonical: "/solutions",
+},
 };
 
 export default function SolutionsPage() {
