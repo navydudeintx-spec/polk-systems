@@ -92,6 +92,7 @@ export function Hero() {
                     <div className="border-b border-white/10 p-8 flex justify-between items-center bg-black/20 backdrop-blur-sm z-30">
                         <SystemStatus progress={scrollProgress} />
                         <div className="hidden lg:flex items-center gap-8 text-[10px] font-black tracking-widest text-white/60 uppercase">
+                            <span>Local-first smart home installation for lighting, cameras, comfort, security, and automation. </span>
                             <span>Private and Secure</span>
                             <span>Quiet Standard 2.0.4</span>
                         </div>
@@ -159,7 +160,7 @@ export function Hero() {
                             <span className="text-white/20">Heart.</span>
                         </h2>
                         <p className="text-white/60 text-[10px] font-black uppercase tracking-widest leading-loose max-w-[200px]">
-                            Your memories stay within your walls—exactly where they belong.
+                            Your memories stay within your walls—protected by a local-first home automation system.
                         </p>
                         <div className="absolute bottom-12 right-12 text-2xl font-light opacity-0 group-hover:opacity-100 transition-opacity">↗</div>
                     </Link>
